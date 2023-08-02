@@ -8,7 +8,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brandRed: {
+          200: "#BF332C",
+          400: "#D40F0D",
+          500: "#D60D0C",
+        },
+        brandBlack: "#0D0D0D",
+        brandWhite: "#FEFEFE"
+      }
+    },
   },
   plugins: [],
 }
