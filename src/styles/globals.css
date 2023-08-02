@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamb_actived {
+
+}
+.hamb_actived:nth-child(1) {}
+.hamb_actived:nth-child(3) {}
