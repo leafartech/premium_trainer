@@ -7,9 +7,7 @@ const Home = () => {
     <>
       <Header />
       <main>
-        <section className="text-white">
-          CONTEÚDO PRINCIPAL
-        </section>
+
       </main>
       <FAQ />
       <Footer />
