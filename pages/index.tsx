@@ -13,7 +13,7 @@ const Home = () => {
       </main>
       <FAQ />
       <Footer />
-    <>
+    </>
   )
 }
 

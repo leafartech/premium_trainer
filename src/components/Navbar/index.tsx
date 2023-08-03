@@ -12,14 +12,14 @@ const Navbar = () => {
   }
 
   return ( 
-    <nav className="fixed top-0 left-0 w-full bg-blue-700 h-12 md:h-16 flex items-center">
-        <div className="">
-
+    <nav className="fixed top-0 left-0 w-full h-16 flex items-center justify-between">
+        <div className="p-1">
+          Logo
         </div>
-        <div id="navbar_menu" className="cursor-pointer absolute right-3 h-4 w-7 flex justify-between items-end flex-col z-10" onClick={e => Toggle()}>
-          <div className={`bg-white w-full rounded transition`} style={{ height: '2px'}}></div>
-          <div className={`bg-white w-full rounded transition ${navbarToggle && 'opacity-0'}`} style={{ height: '2px'}}></div>
-          <div className={`bg-white w-full rounded transition`} style={{ height: '2px'}}></div>
+        <div id="navbar_menu" className="cursor-pointer md:hidden absolute right-3 h-4 w-7 flex justify-between items-center flex-col z-10" onClick={() => Toggle()}>
+          <div className={`bg-white w-full rounded transition h-[2px] ${navbarToggle && "absolute rotate-[45deg] top-2/4 translate-y-[-50%]"} `}></div>
+          <div className={`bg-white w-full rounded transition h-[2px] ${navbarToggle && 'opacity-0'}`}></div>
+          <div className={`bg-white w-full rounded transition h-[2px] ${navbarToggle && "absolute rotate-[-45deg] bottom-2/4 translate-y-[50%]"}`}></div>
         </div>
         <ul className={`absolute top-0 transition w-full bg-black min-h-screen flex flex-col md:flex-row ${!navbarToggle ? 'translate-x-full' : 'translate-x-0'}`}>
           <li>
