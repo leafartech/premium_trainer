@@ -10,15 +10,15 @@ import { AirFreshener, AddDocument, AlignLeft } from "react-flaticons";
 
 const Home = () => {
   const cardData = [{
-    icon: <AirFreshener  size={24} />,
+    icon: <AirFreshener  size={28} />,
     title: "Formação Acadêmica",
     description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng"
   },{
-    icon: <AddDocument size={24} />,
+    icon: <AddDocument size={28} />,
     title: "Experiẽncia na área",
     description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng"
   },{
-    icon: <AlignLeft size={24} />,
+    icon: <AlignLeft size={28} />,
     title: "Total de clientes",
     description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng"
   },]
@@ -41,7 +41,7 @@ const Home = () => {
         <Section>
           <div className="w-full">
             <img
-              className="w-full"
+              className="w-myLg md:w-myXl"
               src="images/bg1.png"
               alt="Foto do João Navarro"
             />
