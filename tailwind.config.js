@@ -17,6 +17,10 @@ module.exports = {
         },
         brandBlack: "#0D0D0D",
         brandWhite: "#FEFEFE"
+      },
+      width: {
+        myLg: "450px",
+        myXl: "600px"
       }
     },
   },

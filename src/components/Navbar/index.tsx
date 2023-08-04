@@ -37,7 +37,7 @@ const Navbar = () => {
         ></div>
       </div>
       <ul
-        className={`transition w-myVw space-y-4 top-0 p-4 bg-black absolute min-h-screen md:bg-transparent md:transform-none
+        className={`transition w-screen space-y-4 top-0 p-4 bg-black absolute min-h-screen md:bg-transparent md:transform-none
          md:p-3 md:w-[600px] md:flex md:h-full md:relative md:space-y-0 md:justify-around md:right-4 md:items-center ${!navbarToggle ? "translate-x-full" : "translate-x-0"} `}
       >
         <li>
