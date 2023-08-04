@@ -26,9 +26,9 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <Header
-        topTitle="TREINADOR"
+        topTitle="treinador"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
-        ctaText="QUERO SABER MAIS"
+        ctaText="Quero saber mais!"
         ctaHref="#produtos"
         imageHeaderPath="1"
       >
