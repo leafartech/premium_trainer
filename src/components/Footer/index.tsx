@@ -1,6 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="border-t-2 mt-4 line-gradient w-full flex flex-col justify-center items-center p-3">
+    <footer className="mt-4 w-full flex flex-col justify-center items-center p-3">
+      <div className="line-gradient w-11/12 h-[2px]"></div>
       <h1 className="text-white">logo</h1>
       {/* Subistiuir pela LOGO */}
       <h3 className="text-xl text-white">
