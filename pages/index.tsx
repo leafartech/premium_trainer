@@ -4,24 +4,26 @@ import Footer from "components/Footer"
 import Header from "components/Header"
 import MiniBox from "components/MiniBox"
 import Section from "components/Section"
-import { AirFreshener, AddDocument, AlignLeft } from "react-flaticons";
-
-
+import { FaGraduationCap, FaBusinessTime } from "react-icons/fa6"
 
 const Home = () => {
-  const cardData = [{
-    icon: <AirFreshener  size={28} />,
-    title: "Formação Acadêmica",
-    description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng"
-  },{
-    icon: <AddDocument size={28} />,
-    title: "Experiẽncia na área",
-    description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng"
-  },{
-    icon: <AlignLeft size={28} />,
-    title: "Total de clientes",
-    description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng"
-  },]
+  const cardData = [
+    {
+      icon: <FaGraduationCap size={30} />,
+      title: "Formação Acadêmica",
+      description: "Bacharelado em educação física.",
+    },
+    {
+      icon: <FaBusinessTime size={30} />,
+      title: "Experiẽncia na área",
+      description: "Atuante na área há mais de 8 anos.",
+    },
+    {
+      icon: "",
+      title: "Total de clientes",
+      description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng",
+    },
+  ]
 
   return (
     <div className="overflow-hidden">
@@ -52,17 +54,19 @@ const Home = () => {
           <h2 className="font-bold text-brandWhite text-3xl">
             Quem é João Navarro?
           </h2>
-          <p className="text-brandWhite">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum odit, vitae excepturi tempore numquam dolorem alias explicabo vero. Est unde saepe optio! Repellat, atque quae accusantium natus itaque quam cumque.</p>
-          <div>
-            
-          </div>
+          <p className="text-brandWhite">
+            Apaixonado por saúde e beme estar. Com bacharelado em
+            educação física e mais de 8 anos de experiẽncia no mundo
+            do treinamento, ele é um profissional dedicado e
+            compromissado com o sucesso de seus alunos.{" "}
+          </p>
           {cardData.map((item, index) => (
             <Card
               key={index}
               icon={item.icon}
               title={item.title}
               description={item.description}
-             />
+            />
           ))}
         </Section>
       </main>
