@@ -24,7 +24,7 @@ const Header = ({
   return (
     <header className="space-y-2 flex w-full min-h-screen flex-col">
       <Navbar />
-      <div className="flex flex-col w- w-full justify-center items-center space-y-2 lg:hidden">
+      <div className="flex flex-col w-full justify-center items-center space-y-2 lg:hidden">
         <h3 className="p-1 text-center uppercase tracking-[1.15em] text-xs text-brandWhite">
           {topTitle}
         </h3>
