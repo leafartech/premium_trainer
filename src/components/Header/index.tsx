@@ -33,7 +33,7 @@ const Header = ({
           João Navarro
         </h1>
       </div>
-      <div className="absolute top-0 left-0 w-full -z-10 min-h-screen flex items-end justify-center md:items-center md:justify-center">
+      <div className="absolute top-0 left-0 w-full -z-10 min-h-screen flex  items-end justify-center md:items-center md:justify-center">
         <div className="max-w-my min-h-screen flex flex-col justify-end md:justify-center md:items-center md:flex-row-reverse">
           <div className="text-white lg:w-myLg xl:w-myXl mdabsolute md:top-0 md:left-0 md:relative text-5xl">
             <img
@@ -46,9 +46,7 @@ const Header = ({
             <div className="w-full hidden lg:block">
               <MiniBox text="treinador" />
             </div>
-            <h2 className="text-3xl md:text-5xl text-brandWhite font-bold">
-              {children}
-            </h2>
+            {children}
             <p className="text-zinc-300 text-base text-justify">
               {description}
             </p>

@@ -1,3 +1,4 @@
+import Box from "components/Box"
 import ButtonCTA from "components/ButtonCTA"
 import Card from "components/Card"
 import FAQ from "components/FAQ"
@@ -9,7 +10,7 @@ import Quote from "components/Quote"
 import SecondCard from "components/SecondCard"
 import Section from "components/Section"
 import Link from "next/link"
-import { FaGraduationCap, FaBusinessTime } from "react-icons/fa6"
+import { FaGraduationCap, FaBusinessTime, FaTrophy } from "react-icons/fa6"
 
 const Home = () => {
   const cardData = [
@@ -47,16 +48,16 @@ const Home = () => {
         ctaHref="#produtos"
         imageHeaderPath="1"
       >
-        Te ajudo a conquistar o{" "}
-        <span className="text-brandRed-500">
-          shape dos seus sonhos
-        </span>
+        <H2
+          textWhite="Te ajudo a conquistar"
+          textRed="O shape dos seus sonhos"
+         />
       </Header>
       <main>
         <Section>
-          <div className="w-full space-y-2">
+          <div className="w-full">
             <img
-              className="w-myLg md:w-myXl"
+              className="w-myLg mt-3 md:w-myXl"
               src="images/bg1.png"
               alt="Foto do João Navarro"
             />
@@ -101,13 +102,29 @@ const Home = () => {
             <SecondCard key={index} title={title} />
           ))}
         </Section>
-      </main>
       <Section>
-        <H2 textWhite="Headline com" textRed="texto vermelho" />
+        <H2 textWhite="Headline com DSFASFFAS" textRed="texto vermelho" />
         <Quote Citation="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id voluptas natus obcaecati reiciendis nobis reprehenderit inventore in incidunt, omnis earum molestias molestiae illo! Praesentium a qui ullam odio rerum." />
+        <div className="w-full md:max-w-xs">
+            <ButtonCTA>
+              <Link href="/">Quero saber mais!</Link>
+            </ButtonCTA>
+          </div>
       </Section>
-      {/* <FAQ />
-      <Footer /> */}
+      <Section>
+        <H2
+        textWhite="Mais uma headline com"   
+        textRed="Texto vermelho"
+          />
+        <Box
+          icon={<FaTrophy size={34} />}
+          boxTitle="Identificação dos objetivos"
+          boxDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi adipisci consequuntur perspiciatis quia sed repellat nulla reprehenderit ipsum beatae, repellendus numquam saepe quis necessitatibus delectus quo quae cupiditate a."
+        />
+      </Section>
+      </main>
+      {/* <FAQ />*/}
+      <Footer /> 
     </div>
   )
 }

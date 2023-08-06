@@ -9,3 +9,9 @@
 .line-gradient {
     background: radial-gradient(50% 50.00% at 50% 50.00%, #D60D0C 0%, rgba(211, 13, 12, 0) 100%);
 }
+
+.border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(to right, #D60D0C 80%, #0D0D0D 80%);
+    border-image-slice: 1;
+}

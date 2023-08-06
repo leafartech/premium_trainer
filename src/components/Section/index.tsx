@@ -7,7 +7,7 @@ type SectionProps = {
 const Section = ({ children}: SectionProps) => {
     return (
         <section className="w-full flex flex-col md:items-center md:justify-center">
-            <div className="max-w-7xl">
+            <div className="max-w-7xl mb-4 mt-2">
                 {children}
             </div>
         </section>
