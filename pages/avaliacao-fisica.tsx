@@ -1,7 +1,6 @@
 const AvaliacaoFisica = () => {
   return (
-    <>
-    </>
+    <></>
   )
 }
 
