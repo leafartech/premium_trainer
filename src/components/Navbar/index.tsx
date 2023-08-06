@@ -41,12 +41,12 @@ const Navbar = () => {
          md:p-3 md:w-[600px] md:flex md:h-full md:relative md:space-y-0 md:justify-around md:right-4 md:items-center ${!navbarToggle ? "translate-x-full" : "translate-x-0"} `}
       >
         <li>
-          <Link href="" className={`${router.pathname === '/' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:underline font-medium`}>
+          <Link href="/" className={`${router.pathname === '/' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:underline font-medium`}>
             Início
           </Link>
         </li>
         <li>
-          <Link href="" className={`${router.pathname === 'avaliacao-fisica' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link href="/avaliacao-fisica" className={`${router.pathname === 'avaliacao-fisica' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
             Avaliação física
           </Link>
         </li>

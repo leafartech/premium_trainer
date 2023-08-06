@@ -2,6 +2,7 @@ import ButtonCTA from "components/ButtonCTA"
 import Card from "components/Card"
 import FAQ from "components/FAQ"
 import Footer from "components/Footer"
+import H2 from "components/H2"
 import Header from "components/Header"
 import MiniBox from "components/MiniBox"
 import Quote from "components/Quote"
@@ -63,9 +64,7 @@ const Home = () => {
           <div className="w-full px-1 lg:hidden">
             <MiniBox text="treinador" />
           </div>
-          <h2 className="font-bold text-brandWhite text-3xl">
-            Quem é João Navarro?
-          </h2>
+          <H2 textWhite="Quem é" textRed="João Navarro" />
           <p className="text-brandWhite text-justify max-w-2xl">
             Apaixonado por saúde e beme estar. Com bacharelado em
             educação física e mais de 8 anos de experiẽncia no mundo
@@ -81,10 +80,10 @@ const Home = () => {
             />
           ))}
           <div className="w-full md:max-w-xs">
-              <ButtonCTA>
-                <Link href="/">Quero saber mais!</Link>
-              </ButtonCTA>
-            </div>
+            <ButtonCTA>
+              <Link href="/">Quero saber mais!</Link>
+            </ButtonCTA>
+          </div>
         </Section>
         <Section>
           <div className="w-full">
@@ -94,19 +93,17 @@ const Home = () => {
               alt="Foto do João Navarro"
             />
           </div>
-          <h2 className="font-bold text-brandWhite text-3xl">
-            O meu trabalho é ideal para{" "}
-            <span className="text-brandRed-500 uppercase">
-              vocẽ que:
-            </span>
-          </h2>
+          <H2
+            textWhite="O meu trabalho é ideal para"
+            textRed="você que:"
+          />
           {secondCardDataTitles.map((title, index) => (
             <SecondCard key={index} title={title} />
           ))}
         </Section>
       </main>
       <Section>
-        <h2 className="font-bold text-brandWhite text-3xl">Headline com <span className="text-brandRed-500 uppercase">TEXTO VERMELHO</span></h2>
+        <H2 textWhite="Headline com" textRed="texto vermelho" />
         <Quote Citation="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id voluptas natus obcaecati reiciendis nobis reprehenderit inventore in incidunt, omnis earum molestias molestiae illo! Praesentium a qui ullam odio rerum." />
       </Section>
       {/* <FAQ />
