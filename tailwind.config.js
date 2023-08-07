@@ -7,6 +7,9 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "rounded-md"
+  ],
   theme: {
     extend: {
       colors: {

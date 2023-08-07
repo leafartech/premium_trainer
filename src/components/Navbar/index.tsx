@@ -8,6 +8,7 @@ const Navbar = () => {
 
   function Toggle() {
     setNavbarToggle(!navbarToggle)
+    console.log(router.pathname)
   }
 
   return (
@@ -46,17 +47,17 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/avaliacao-fisica" className={`${router.pathname === 'avaliacao-fisica' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link href="/avaliacao-fisica" className={`${router.pathname === '/avaliacao-fisica' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
             Avaliação física
           </Link>
         </li>
         <li>
-          <Link href="" className={`${router.pathname === 'consultoria-presencial' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link href="/consultoria-presencial" className={`${router.pathname === '/consultoria-presencial' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
             Consultoria Presencial
           </Link>
         </li>
         <li>
-          <Link href="" className={`${router.pathname === 'consultoria-online' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link href="/consultoria-online" className={`${router.pathname === '/consultoria-online' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
             Consultoria Online
           </Link>
         </li>

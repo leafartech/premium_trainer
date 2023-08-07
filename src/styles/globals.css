@@ -11,7 +11,31 @@
 }
 
 .border-gradient {
-    border: 2px solid;
-    border-image: linear-gradient(to right, #D60D0C 80%, #0D0D0D 80%);
+    border-width: 2px;
+    border-style: solid;
     border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #D60D0C 50%, rgba(211, 13, 12, 0) 100%)
 }
+
+.border-gradient-50 {
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #D30D0C 0%, rgba(211, 13, 12, 0) 52.08%);
+}
+
+.border-gradient-70 {
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #D30D0C 0%, rgba(211, 13, 12, 0) 76.27%);
+}
+
+.border-gradient-100 {
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #D30D0C 0%, rgba(211, 13, 12, 0) 101%);
+}
+
+

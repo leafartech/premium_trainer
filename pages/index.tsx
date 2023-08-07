@@ -1,6 +1,7 @@
 import Box from "components/Box"
 import ButtonCTA from "components/ButtonCTA"
 import Card from "components/Card"
+import ComparisionBox from "components/ComparasionBox"
 import FAQ from "components/FAQ"
 import Footer from "components/Footer"
 import H2 from "components/H2"
@@ -9,6 +10,7 @@ import MiniBox from "components/MiniBox"
 import Quote from "components/Quote"
 import SecondCard from "components/SecondCard"
 import Section from "components/Section"
+import ServicesBox from "components/ServicesBox"
 import Link from "next/link"
 import { FaGraduationCap, FaBusinessTime, FaTrophy } from "react-icons/fa6"
 
@@ -26,10 +28,11 @@ const Home = () => {
     },
     {
       icon: "",
-      title: "Total de clientes",
+      title: "Extracursos",
       description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng",
     },
   ]
+
 
   const secondCardDataTitles = [
     "Quer vencer a depressão e curar sua ansiedade.",
@@ -38,6 +41,7 @@ const Home = () => {
     "Busca produtividade no dia a dia",
     "Quer tratamento de lesões + reabilitação",
   ]
+
 
   return (
     <div className="overflow-hidden">
@@ -105,7 +109,7 @@ const Home = () => {
       <Section>
         <H2 textWhite="Headline com DSFASFFAS" textRed="texto vermelho" />
         <Quote Citation="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id voluptas natus obcaecati reiciendis nobis reprehenderit inventore in incidunt, omnis earum molestias molestiae illo! Praesentium a qui ullam odio rerum." />
-        <div className="w-full md:max-w-xs">
+        <div className="w-full md:max-w-xs mt-2">
             <ButtonCTA>
               <Link href="/">Quero saber mais!</Link>
             </ButtonCTA>
@@ -122,8 +126,17 @@ const Home = () => {
           boxDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi adipisci consequuntur perspiciatis quia sed repellat nulla reprehenderit ipsum beatae, repellendus numquam saepe quis necessitatibus delectus quo quae cupiditate a."
         />
       </Section>
+        <ComparisionBox />
+        <Section>
+          
+          <H2
+            textWhite="Conheça"
+            textRed="Meus serviços"
+           />
+          <ServicesBox />
+        </Section>
+        <FAQ />
       </main>
-      {/* <FAQ />*/}
       <Footer /> 
     </div>
   )
