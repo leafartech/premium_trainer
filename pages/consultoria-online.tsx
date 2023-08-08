@@ -7,7 +7,7 @@ const ConsultoriaOnline = () => {
       <Header
         topTitle="Consultoria Online"
         ctaText="Venha Fazer Parte!"
-        ctaHref="/consultoria-presencial"
+        ctaHref="/consultoria-online"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
         imageHeaderPath="1"
       >
