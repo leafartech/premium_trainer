@@ -13,7 +13,7 @@ import Section from "components/Section"
 import ServicesBox from "components/ServicesBox"
 import Link from "next/link"
 import { AcademicCapIcon, ClipboardDocumentListIcon, TrophyIcon, ClipboardDocumentCheckIcon, PresentationChartLineIcon, ArrowPathRoundedSquareIcon } from '@heroicons/react/24/outline'
-import MySwiper from "components/Swiper"
+import MySwiper from "components/MySwiper"
 
 const Home = () => {
   const cardData = [
@@ -54,11 +54,11 @@ const Home = () => {
         imageHeaderPath="1"
       >
         {/* PASSAR COMO CHILDREN PARA MANIPULAR MAIS FACILMENTE AS CORES */}
-        <H2>Te ajudo a conquistar o <span className="text-red-500">shape dos seus sonhos</span></H2>
+        <H2>Te ajudo a conquistar o <span className="text-brandRed-500">shape dos seus sonhos</span></H2>
       </Header>
       <main>
         <Section>
-          <div className="w-full">
+          <div className="w-full flex justify-center">
             <img
               className="w-myLg mt-3 md:w-myXl"
               src="images/bg1.png"
@@ -102,7 +102,7 @@ const Home = () => {
             />
           </div>
           <div className="mb-2">
-            <H2>O meu trabalho é ideal para você que:</H2>
+            <H2>O meu trabalho é ideal para <span className="text-brandRed-500">você que:</span></H2>
             <div className="mt-4">
               {secondCardDataTitles.map((title, index) => (
                 <SecondCard key={index} title={title} />
@@ -126,11 +126,11 @@ const Home = () => {
           </div> */}
         {/* </Section> */}
         <Section>
-          <H2>Confira alguns <span className="text-red-500">feedbacks</span></H2>
+          <H2>Confira alguns <span className="text-brandRed-500">feedbacks</span></H2>
           <MySwiper />
         </Section>
         <Section>
-          <H2>Por que meus alunos têm tantos <span className="text-red-500">resultados?</span></H2>
+          <H2>Por que meus alunos têm tantos <span className="text-brandRed-500">resultados?</span></H2>
           <div className="flex flex-col gap-6 mt-4">
             <Box
               icon={<TrophyIcon className="w-8 h-8" />}
@@ -165,7 +165,7 @@ const Home = () => {
         </Section>
         <Section>
 
-          <H2>Conheça meus serviços</H2>
+          <H2>Conheça <span className="text-brandRed-500">meus serviços</span></H2>
           <div className="mt-4">
             <ServicesBox />
           </div>

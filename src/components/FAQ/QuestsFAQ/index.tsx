@@ -20,12 +20,12 @@ const QuestsFAQ = ({ quest, answer, data }: QuestsFAQProps ) => {
             className="flex justify-between p-2 border-b border-b-brandRed-500 rounded-md w-full text-brandWhite  group-[.is-active]:font-bold"
           >
             {quest}
-            <div className="text-xl rotate-90 duration-500 group-[.is-active]:rotate-[270deg]">
+            <div className="text-xl rotate-90 duration-500 group-[.is-active]:rotate-[-270deg]">
               <FaChevronRight size={24} />
             </div>
           </button>
           <div className="overflow-hidden max-h-0 group-[.is-active]:max-h-[200px]">
-            <p className="text-brandWhite text-justify">
+            <p className="text-brandWhite mt-2 text-justify">
               {answer}
             </p>
           </div>

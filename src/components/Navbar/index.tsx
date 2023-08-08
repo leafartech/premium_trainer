@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router"
+import { ClipboardDocumentIcon, ComputerDesktopIcon, HomeIcon, UsersIcon } from "@heroicons/react/24/outline"
 
 const Navbar = () => {
   const [navbarToggle, setNavbarToggle] = useState(false)
@@ -39,29 +40,69 @@ const Navbar = () => {
       </div>
       <ul
         className={`transition w-screen space-y-4 top-0 p-4 bg-black absolute min-h-screen md:bg-transparent md:transform-none
-         md:p-3 md:w-[600px] md:flex md:h-full md:relative md:space-y-0 md:justify-around md:right-4 md:items-center ${!navbarToggle ? "translate-x-full" : "translate-x-0"} `}
+         md:p-3 md:w-[600px] md:flex md:h-full md:relative md:space-y-0 md:justify-around md:right-4 md:items-center ${
+           !navbarToggle ? "translate-x-full" : "translate-x-0"
+         } `}
       >
         <li>
-          <Link href="/" className={`${router.pathname === '/' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:underline font-medium`}>
+          <Link
+            href="/"
+            className={`${
+              router.pathname === "/"
+                ? "text-brandRed-500"
+                : "text-zinc-300"
+            } trasition hover:underline font-medium flex gap-2 items-center `}
+          >
             Início
+            <HomeIcon className="w-6 h-6" />
           </Link>
         </li>
         <li>
-          <Link href="/avaliacao-fisica" className={`${router.pathname === '/avaliacao-fisica' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link
+            href="/avaliacao-fisica"
+            className={`${
+              router.pathname === "/avaliacao-fisica"
+                ? "text-brandRed-500"
+                : "text-zinc-300"
+            } trasition hover:text-brandRed-500 hover:underline font-medium flex gap-2 items-center`}
+          >
             Avaliação física
+            <ClipboardDocumentIcon className="w-6 h-6"  />
           </Link>
         </li>
         <li>
-          <Link href="/consultoria-presencial" className={`${router.pathname === '/consultoria-presencial' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link
+            href="/consultoria-presencial"
+            className={`${
+              router.pathname === "/consultoria-presencial"
+                ? "text-brandRed-500"
+                : "text-zinc-300"
+            } trasition hover:text-brandRed-500 hover:underline font-medium flex gap-2 items-center`}
+          >
             Consultoria Presencial
+            <UsersIcon className="w-6 h-6" />
           </Link>
         </li>
         <li>
-          <Link href="/consultoria-online" className={`${router.pathname === '/consultoria-online' ? 'text-brandRed-500' : 'text-zinc-300'} trasition hover:text-brandRed-500 hover:underline font-medium`}>
+          <Link
+            href="/consultoria-online"
+            className={`${
+              router.pathname === "/consultoria-online"
+                ? "text-brandRed-500"
+                : "text-zinc-300"
+            } trasition hover:text-brandRed-500 hover:underline font-medium flex gap-2 items-center`}
+          >
             Consultoria Online
+            <ComputerDesktopIcon className="w-6 h-6" />
           </Link>
         </li>
-        <li className={`w-full md:hidden text-white ${navbarToggle ? "flex justify-center items-center" : "hidden"} `}>
+        <li
+          className={`w-full md:hidden text-white ${
+            navbarToggle
+              ? "flex justify-center items-center"
+              : "hidden"
+          } `}
+        >
           Logo
         </li>
       </ul>

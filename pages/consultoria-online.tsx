@@ -11,10 +11,10 @@ const ConsultoriaOnline = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
         imageHeaderPath="1"
       >
-        <H2
-          textWhite="Te ajudo a conquistar"
-          textRed="O shape dos seus sonhos"
-        />
+        <H2>
+          <span className="text-brandRed-500">Alcance</span> o seu potencial máximo
+        </H2>
+          
       </Header>
     </>
   )

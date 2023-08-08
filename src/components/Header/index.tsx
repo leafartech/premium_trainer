@@ -22,7 +22,7 @@ const Header = ({
   imageHeaderPath,
 }: HeaderProps) => {
   return (
-    <header className="space-y-2 flex w-full min-h-screen flex-col">
+    <header className="flex w-full min-h-[750px] sm:min-h-[950px] md:min-h-screen flex-col">
       <Navbar />
       <div className="flex flex-col w-full justify-center items-center space-y-2 lg:hidden">
         <h3 className="p-1 text-center uppercase tracking-[1.15em] text-xs text-brandWhite">
@@ -33,9 +33,9 @@ const Header = ({
           João Navarro
         </h1>
       </div>
-      <div className="absolute top-0 left-0 w-full -z-10 min-h-screen flex  items-end justify-center md:items-center md:justify-center">
-        <div className="max-w-my min-h-screen flex flex-col justify-end md:justify-center md:items-center md:flex-row-reverse">
-          <div className="text-white lg:w-myLg xl:w-myXl mdabsolute md:top-0 md:left-0 md:relative text-5xl">
+      <div className="absolute top-0 left-0 w-full -z-10 min-h-screen flex justify-center md:items-center md:justify-center">
+        <div className="max-w-my relative min-h-screen flex flex-col justify-start md:justify-center md:items-center md:flex-row-reverse">
+          <div className="lg:w-myLg xl:w-myXl md:top-0 md:left-0 md:relative">
             <img
               className="w-full -z-10"
               src={`images/bg${imageHeaderPath}.png`}

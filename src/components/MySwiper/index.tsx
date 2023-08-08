@@ -20,8 +20,8 @@ const MySwiper = () => {
                     clickable: true
                 }}
                 breakpoints={{
-                    450: {
-                        slidesPerView: 3
+                    500: {
+                        slidesPerView: 1
                     }
                 }}
                 modules={[FreeMode, Pagination]}

@@ -1,10 +1,10 @@
-type ButtonCTAProps = {
+type ButtonCTAProps = React.HTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
 }
 
-const ButtonCTA = ({ children }: ButtonCTAProps) => {
+const ButtonCTA = ({ children, ...props }: ButtonCTAProps) => {
   return(
-    <button className="btn-shadow bg-brandRed-500 w-full rounded-md text-center uppercase text-brandWhite cursor-pointer py-3 font-bold">
+    <button {...props} className="btn-shadow bg-brandRed-500 w-full rounded-md text-center uppercase text-brandWhite py-3 font-bold">
       {children}
     </button>
   )
