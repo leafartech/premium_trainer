@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { useRouter } from "next/router"
-import { ClipboardDocumentIcon, ComputerDesktopIcon, HomeIcon, UsersIcon } from "@heroicons/react/24/outline"
+import { ClipboardDocumentCheckIcon, ComputerDesktopIcon, HomeIcon, UsersIcon } from "@heroicons/react/24/outline"
 
 const Navbar = () => {
   const [navbarToggle, setNavbarToggle] = useState(false)
@@ -53,8 +53,8 @@ const Navbar = () => {
                 : "text-zinc-300"
             } trasition hover:underline font-medium flex gap-2 items-center `}
           >
-            Início
             <HomeIcon className="w-6 h-6" />
+            Início
           </Link>
         </li>
         <li>
@@ -66,8 +66,8 @@ const Navbar = () => {
                 : "text-zinc-300"
             } trasition hover:text-brandRed-500 hover:underline font-medium flex gap-2 items-center`}
           >
+            <ClipboardDocumentCheckIcon className="w-6 h-6"  />
             Avaliação física
-            <ClipboardDocumentIcon className="w-6 h-6"  />
           </Link>
         </li>
         <li>
@@ -79,8 +79,8 @@ const Navbar = () => {
                 : "text-zinc-300"
             } trasition hover:text-brandRed-500 hover:underline font-medium flex gap-2 items-center`}
           >
-            Consultoria Presencial
             <UsersIcon className="w-6 h-6" />
+            Consultoria Presencial
           </Link>
         </li>
         <li>
@@ -92,8 +92,8 @@ const Navbar = () => {
                 : "text-zinc-300"
             } trasition hover:text-brandRed-500 hover:underline font-medium flex gap-2 items-center`}
           >
-            Consultoria Online
             <ComputerDesktopIcon className="w-6 h-6" />
+            Consultoria Online
           </Link>
         </li>
         <li
