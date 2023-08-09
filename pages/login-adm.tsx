@@ -43,7 +43,7 @@ const LoginAdm = () => {
             Acessar Painel
           </h2>
           {messages.length > 0 && (
-            <span className="font-medium text-[10px] text-center">
+            <span className="font-medium text-[10px] text-center text-brandRed-500">
               {messages}
             </span>
           )}
@@ -56,7 +56,7 @@ const LoginAdm = () => {
             className="bg-transparent border px-4 py-2 rounded-lg border-gray-600 focus:outline-none focus:border-gray-400"
           />
           {errors.email && (
-            <span className="text-red-500 font-medium text-[12px]">
+            <span className="text-brandRed-500 font-medium text-[12px]">
               {errors.email.message}
             </span>
           )}
@@ -69,7 +69,7 @@ const LoginAdm = () => {
             className="bg-transparent border px-4 py-2 rounded-lg border-gray-600 focus:outline-none focus:border-gray-400"
           />
           {errors.password && (
-            <span className="text-red-500 font-medium text-[12px]">
+            <span className="text-brandRed-500 font-medium text-[12px]">
               {errors.password.message}
             </span>
           )}
