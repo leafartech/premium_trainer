@@ -39,7 +39,7 @@ const LoginAdm = () => {
         onSubmit={handleSubmit(formSubmited)}
       >
         <div className="flex flex-col justify-center">
-          <h2 className="text-3xl text-white text-center font-semibold">
+          <h2 className="text-3xl text-brandWhite text-center font-semibold">
             Acessar Painel
           </h2>
           {messages.length > 0 && (
