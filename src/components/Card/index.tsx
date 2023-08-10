@@ -1,17 +1,22 @@
+import { ElementType } from "react"
+
 type CardProps = {
-  icon: any;
-  title: string;
-  description: string;
+  Icon: ElementType
+  title: string
+  description: string
 }
 
-const Card = ({ icon, title, description }: CardProps) => {
+const Card = ({ Icon, title, description }: CardProps) => {
   return (
-    <div className="py-3 w-full flex flex-col justify-center items-start">
-      <div className="flex space-x-1 items-center text-brandRed-500">
-        {icon}
+    <div
+      className="flex flex-col 
+      items-start md:items-center md:justify-center text-brandRed-500"
+    >
+      <div className="flex md:flex-col md:justify-center items-center gap-1 md:gap-0">
+        <Icon className="h-9 w-9" />
         <h3 className="text-2xl font-medium">{title}</h3>
       </div>
-      <p className="text-zinc-300 text-lg ms-10">{description}</p>
+      <p className="text-zinc-300 text-lg ms-10 md:ms-0">{description}</p>
     </div>
   )
 }

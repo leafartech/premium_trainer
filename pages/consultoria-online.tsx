@@ -13,24 +13,6 @@ import TimeLine from "components/TimeLine"
 import Link from "next/link"
 
 const ConsultoriaOnline = () => {
-  const cardData = [
-    {
-      icon: <UserIcon className="h-9 w-9" />,
-      title: "Formação Acadêmica",
-      description: "Bacharelado em educação física."
-    },
-    {
-      icon: <StarIcon className="h-9 w-9" />,
-      title: "Experiência na área",
-      description: "Atuante na área há mais de 8 anos."
-    }
-    // {
-    //   icon: "",
-    //   title: "Extracursos",
-    //   description: "lorem fsnjfbjdbfkjbsdnjkgnjsdng",
-    // },
-  ]
-
   return (
     <div className="overflow-hidden">
       <Header
@@ -62,14 +44,16 @@ const ConsultoriaOnline = () => {
         <Section>
           <H2>Foco da consultoria</H2>
           <div className="my-2">
-            {cardData.map((item, index) => (
-              <Card
-                key={index}
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-              />
-            ))}
+            <Card
+              Icon={UserIcon}
+              title="Formação Acadêmica"
+              description="Bacharelado em educação física."
+            />
+            <Card
+              Icon={StarIcon}
+              title="experiencia na área"
+              description="blblalbllallblalblalbllalba"
+            />
           </div>
           <div className="w-full md:max-w-xs">
             <ButtonCTA>

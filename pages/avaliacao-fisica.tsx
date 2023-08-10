@@ -23,7 +23,7 @@ const AvaliacaoFisica = () => {
         ctaText="Quero uma estratégia personalizada!"
         ctaHref="/consultoria-presencial"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
-        imageHeaderPath="1"
+        imageHeaderPath="3"
       >
         <H2>
           <span className="text-brandRed-500">Vamos</span> pra cimaaaaaaa!
