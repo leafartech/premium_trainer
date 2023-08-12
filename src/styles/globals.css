@@ -175,7 +175,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.swiper .swiper-wrapper {
+  display: flex;
+  gap: 24px;
+}
 .swiper-slide img {
   display: block;
   width: 100%;
