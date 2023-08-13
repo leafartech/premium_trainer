@@ -74,8 +74,16 @@ const Header = ({
         <img src={`./images/${imageHeaderPath}Pc.png`} alt="Imagem de fundo" />
       </div>
       <div className="">
-        <img src={`./images/${imageHeaderPath}.png`} className="block sm:hidden" alt="" />
-        <img src={`./images/${imageHeaderPath}Pc2.png`} className="hidden sm:block" alt="" />
+        <img
+          src={`./images/${imageHeaderPath}.png`}
+          className="block sm:hidden"
+          alt=""
+        />
+        <img
+          src={`./images/${imageHeaderPath}Pc2.png`}
+          className="hidden sm:block"
+          alt=""
+        />
       </div>
       <div className="absolute top-16 flex flex-col justify-center items-center w-full sm:opacity-0">
         <h3 className="p-1 text-center uppercase tracking-[1em] text-xs text-brandWhite">
@@ -89,7 +97,12 @@ const Header = ({
       <div className="flex flex-col gap-3 justify-start items-start px-2 -mt-[120px] sm:mt-0 sm:max-w-[600px]">
         {children}
         <p className="text-zinc-300 text-justify">{description}</p>
-        <a href="#produtos" className="btn-shadow bg-brandRed-500 w-full sm:w-64 rounded-md text-center uppercase text-brandWhite py-3 font-bold">{ctaText}</a>
+        <a
+          href={ctaHref}
+          className="btn-shadow bg-brandRed-500 w-full sm:w-64 rounded-md text-center uppercase text-brandWhite py-3 font-bold"
+        >
+          {ctaText}
+        </a>
       </div>
     </header>
   )

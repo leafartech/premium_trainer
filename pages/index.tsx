@@ -30,8 +30,8 @@ const Home = () => {
         topTitle="treinador"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
         ctaText="Quero saber mais!"
-        ctaHref="#produtos"
         imageHeaderPath="inicio"
+        ctaHref="#produtos"
       >
         <H2 header={true}>
           Te ajudo a conquistar o{" "}

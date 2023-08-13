@@ -1,4 +1,4 @@
-import { StarIcon, UserIcon } from "@heroicons/react/24/outline"
+import { StarIcon, UserIcon, BoltIcon } from "@heroicons/react/24/outline"
 import ButtonCTA from "components/ButtonCTA"
 import Card from "components/Card"
 import FAQ from "components/FAQ"
@@ -29,21 +29,20 @@ const ConsultoriaOnline = () => {
       </Header>
       <main>
         <Section>
-          <div></div>
           <div className="w-full flex flex-col gap-1">
-            <H2>
+            <H2 center={true}>
               Como a <span className="text-brandRed-500">consultoria</span>{" "}
               funciona
             </H2>
-            <h4 className="text-zinc-300">
+            <h4 className="text-zinc-300 md:text-center">
               Para entender melhor, confira esta linha do tempo abaixo:{" "}
             </h4>
           </div>
           <TimeLine />
         </Section>
         <Section>
-          <H2>Foco da consultoria</H2>
-          <div className="my-2">
+          <H2 center={true}>Foco da consultoria online</H2>
+          <div className="w-full flex flex-col md:flex-row md:gap-10 mt-2">
             <Card
               Icon={UserIcon}
               title="Formação Acadêmica"
@@ -54,8 +53,13 @@ const ConsultoriaOnline = () => {
               title="experiencia na área"
               description="blblalbllallblalblalbllalba"
             />
+            <Card
+              Icon={BoltIcon}
+              title="experiencia na área"
+              description="blblalbllallblalblalbllalba"
+            />
           </div>
-          <div className="w-full md:max-w-xs">
+          <div className="w-full md:hidden">
             <ButtonCTA>
               <Link href="/">Quero saber mais!</Link>
             </ButtonCTA>
@@ -79,11 +83,9 @@ const ConsultoriaOnline = () => {
           </div>
         </Section>
         <Section>
-          <span className="w-full text-center">
-            <H2>
-              <span className="tracking-[12px]">FAQ</span>
-            </H2>
-          </span>
+          <H2 center={true}>
+            <span className="tracking-[12px]">FAQ</span>
+          </H2>
           <FAQ />
         </Section>
       </main>
