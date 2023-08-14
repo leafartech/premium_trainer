@@ -75,7 +75,7 @@ const AvaliacaoFisica = () => {
         <Section>
           <span className="w-full text-center">
             <H2 center={true}>
-              <span className="tracking-[12px]">FAQ</span>
+              <span className="tracking-[12px] text-center">FAQ</span>
             </H2>
           </span>
           <FAQ />

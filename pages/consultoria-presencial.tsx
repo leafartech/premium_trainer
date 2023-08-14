@@ -76,7 +76,7 @@ const ConsultoriaPresencial = () => {
         </Section>
         <Section>
           <H2 center={true}>
-            <span className="tracking-[12px] ">FAQ</span>
+            <span className="tracking-[12px] text-center">FAQ</span>
           </H2>
           <FAQ />
         </Section>
