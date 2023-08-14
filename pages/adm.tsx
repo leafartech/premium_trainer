@@ -14,7 +14,7 @@ import Logo from "components/Logo"
 
 const Adm = () => {
   const router = useRouter()
-  const [access, setAccess] = useState<boolean>(false)
+  const [access, setAccess] = useState(false)
   const [dropVerify, setDropVerify] = useState<number | null>(null)
 
   let userAuth: string | null = ""
@@ -43,12 +43,12 @@ const Adm = () => {
     <>
       {access && (
         <div>
-          <header className="flex items-center justify-center py-4 border-b border-white">
+          <header className="flex items-center justify-center py-4 border-b border-brandWhite">
             <Logo />
           </header>
           <main className="px-4">
             <div className="py-4">
-              <h1 className="text-white text-3xl mb-2 font-bold">
+              <h1 className="text-brandWhite text-3xl mb-2 font-bold">
                 Painel administrativo
               </h1>
               <p className="text-zinc-400 text-sm">
@@ -80,13 +80,13 @@ const Adm = () => {
             <div className="my-12 flex text-center flex-col gap-6">
               <Link
                 href="/adm/agenda"
-                className="py-4 text-white font-semibold border border-emerald-400 flex-1 rounded-md hover:bg-emerald-400"
+                className="py-4 text-brandWhite font-semibold border border-emerald-400 flex-1 rounded-md hover:bg-emerald-400"
               >
                 Visualizar agenda
               </Link>
               <Link
                 href="/adm/configuracao"
-                className="py-4 text-white font-semibold border border-emerald-400 flex-1 rounded-md hover:bg-emerald-400"
+                className="py-4 text-brandWhite font-semibold border border-emerald-400 flex-1 rounded-md hover:bg-emerald-400"
               >
                 Configuração
               </Link>
@@ -108,8 +108,9 @@ const Adm = () => {
                       <p className="flex gap-2 items-center">
                         <span>Ago 10, 2023</span>
                         <ChevronDownIcon
-                          className={`w-5 h-5 ${dropVerify === 0 ? "rotate-0" : "-rotate-90"
-                            }`}
+                          className={`w-5 h-5 ${
+                            dropVerify === 0 ? "rotate-0" : "-rotate-90"
+                          }`}
                           onClick={(e) => dropClicked(0)}
                         />
                       </p>

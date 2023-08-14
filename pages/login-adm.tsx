@@ -32,13 +32,13 @@ const LoginAdm = () => {
     })
   }
 
-  let auth: null | string = ''
-  if (typeof window !== 'undefined') {
-    auth = localStorage.getItem('train-system')
+  let auth: null | string = ""
+  if (typeof window !== "undefined") {
+    auth = localStorage.getItem("train-system")
   }
 
   if (!!auth) {
-    router.push('/adm')
+    router.push("/adm")
   }
 
   return (
@@ -86,7 +86,7 @@ const LoginAdm = () => {
         </div>
         <button
           type="submit"
-          className="w-full flex items-center justify-center py-2 text-white font-semibold bg-emerald-500 hover:bg-emerald-600 rounded-lg"
+          className="w-full flex items-center justify-center py-2 text-brandWhite font-semibold bg-emerald-500 hover:bg-emerald-600 rounded-lg"
         >
           Entrar
         </button>

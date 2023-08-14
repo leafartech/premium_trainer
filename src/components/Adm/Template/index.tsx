@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-interface TemplateProps {
+type TemplateProps = {
   children: ReactNode
   subtitle: string
 }

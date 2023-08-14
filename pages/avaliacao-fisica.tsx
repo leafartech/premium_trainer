@@ -23,20 +23,20 @@ const AvaliacaoFisica = () => {
         ctaText="Quero uma estratégia personalizada!"
         ctaHref="/consultoria-presencial"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
-        imageHeaderPath="3"
+        imageHeaderPath="avaliacao-fisica"
       >
-        <H2>
+        <H2 header={true}>
           <span className="text-brandRed-500">Vamos</span> pra cimaaaaaaa!
         </H2>
       </Header>
       <main>
         <Section>
           <div className="w-full flex flex-col gap-1">
-            <H2>
+            <H2 center={true}>
               Como a <span className="text-brandRed-500">consultoria</span>{" "}
               funciona
             </H2>
-            <h4 className="text-zinc-300">
+            <h4 className="text-zinc-300 md:text-center">
               Para entender melhor, confira esta linha do tempo abaixo:{" "}
             </h4>
           </div>
@@ -44,7 +44,7 @@ const AvaliacaoFisica = () => {
         </Section>
         <Section>
           <div className="mb-2">
-            <H2>
+            <H2 center={true}>
               Ele é <span className="text-brandRed-500">ideal</span> para você
               que:
             </H2>
@@ -74,7 +74,7 @@ const AvaliacaoFisica = () => {
         </Section>
         <Section>
           <span className="w-full text-center">
-            <H2>
+            <H2 center={true}>
               <span className="tracking-[12px]">FAQ</span>
             </H2>
           </span>

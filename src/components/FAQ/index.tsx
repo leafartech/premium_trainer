@@ -1,14 +1,9 @@
 import { useState } from "react"
 import QuestsFAQ from "./QuestsFAQ"
-
-type FAQProps = {
-  question: string
-  answer: string
-  active?: number
-}
+import { FAQProps } from "../../../types/faqProps"
 
 const FAQ = () => {
-  const [questsFAQ, setQuestFAQ] = useState<FAQProps[]>([
+  const [questsFAQ] = useState<FAQProps[]>([
     {
       question: "Onde fica a clínica que você atende?",
       answer:
@@ -45,4 +40,3 @@ const FAQ = () => {
   )
 }
 export default FAQ
-export type { FAQProps }
