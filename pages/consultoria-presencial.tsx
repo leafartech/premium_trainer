@@ -21,9 +21,9 @@ const ConsultoriaPresencial = () => {
     <div className="overflow-hidden">
       <Header
         topTitle="Consultoria Presencial"
-        ctaText="Quero uma estratégia personalizada!"
-        ctaHref="/consultoria-presencial"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
+        ctaText="Quero uma estratégia personalizada agora!"
+        ctaHref="https://navarro.pay.yampi.com.br/r/GAPN0IWFZD"
+        description="Experimente uma abordagem direcionada e interativa com nossos serviços de consultoria presencial. Trabalharemos juntos para definir metas, traçar estratégias e alcançar resultados excepcionais.."
         imageHeaderPath="consultoria-presencial0"
       >
         <H2 header={true}>
@@ -61,8 +61,9 @@ const ConsultoriaPresencial = () => {
           <PurchaseCard
             titleCard="Consultoria Presencial"
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
-            valueOff="999"
-            valueOn="999"
+            valueOff="299"
+            valueOn="220"
+            href="https://navarro.pay.yampi.com.br/r/GAPN0IWFZD"
           />
         </Section>
         <Section>

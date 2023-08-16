@@ -1,33 +1,17 @@
 import Logo from "components/Logo"
 import { useRouter } from "next/router"
-import { SubmitHandler, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { ChevronLeftIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
+import { arrHour } from "utils"
 
 const Configuracao = () => {
   const [access, setAccess] = useState(false)
   const router = useRouter()
   const [currentHours, setCurrentHours] = useState<number[]>()
   const { register, handleSubmit } = useForm()
-  const arrHour = [
-    "7:00",
-    "8:00",
-    "9:00",
-    "10:00",
-    "11:00",
-    "12:00",
-    "13:00",
-    "14:00",
-    "15:00",
-    "16:00",
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00"
-  ]
 
   let auth: null | string = ""
   if (typeof window !== "undefined") {

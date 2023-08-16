@@ -6,7 +6,7 @@ import "swiper/css/free-mode"
 import "swiper/css/pagination"
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules'
+import { FreeMode, Pagination } from "swiper/modules"
 
 const MySwiper = () => {
   return (
@@ -35,63 +35,63 @@ const MySwiper = () => {
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/1.png" alt="" />
+              <img src="./images/feedbacks/1.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/2.png" alt="" />
+              <img src="./images/feedbacks/2.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/3.png" alt="" />
+              <img src="./images/feedbacks/3.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/4.png" alt="" />
+              <img src="./images/feedbacks/4.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/5.png" alt="" />
+              <img src="./images/feedbacks/5.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/6.png" alt="" />
+              <img src="./images/feedbacks/6.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/7.png" alt="" />
+              <img src="./images/feedbacks/7.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/8.png" alt="" />
+              <img src="./images/feedbacks/8.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[450px] flex items-center">
             <div>
-              <img src="./images/feedbacks/9.png" alt="" />
+              <img src="./images/feedbacks/9.png" alt="Feedbacks" />
             </div>
           </div>
         </SwiperSlide>

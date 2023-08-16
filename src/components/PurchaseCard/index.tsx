@@ -1,4 +1,3 @@
-import { CheckIcon } from "@heroicons/react/24/solid"
 import ButtonCTA from "components/ButtonCTA"
 
 type PurchaseCardProps = {
@@ -6,13 +5,15 @@ type PurchaseCardProps = {
   descriptionCard: string
   valueOff: string
   valueOn: string
+  href: string
 }
 
 const PurchaseCard = ({
   titleCard,
   descriptionCard,
   valueOff,
-  valueOn
+  valueOn,
+  href
 }: PurchaseCardProps) => {
   return (
     <div className="w-full purchase-card flex flex-col gap-3 justify-center px-4 py-8">
@@ -40,7 +41,7 @@ const PurchaseCard = ({
         </div>
       </div>
       <div>
-        <ButtonCTA>Quero agendar um horário</ButtonCTA>
+        <ButtonCTA href={href}>Quero agendar um horário</ButtonCTA>
       </div>
       <div className="flex flex-col gap-3 mt-3 w-full">
         <div className="flex items-center gap-3">

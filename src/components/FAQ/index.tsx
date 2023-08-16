@@ -1,6 +1,6 @@
 import { useState } from "react"
 import QuestsFAQ from "./QuestsFAQ"
-import { FAQProps } from "../../../types/faqProps"
+import { FAQProps } from "../../types/faqProps"
 
 const FAQ = () => {
   const [questsFAQ] = useState<FAQProps[]>([

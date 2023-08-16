@@ -11,7 +11,6 @@ import Quote from "components/Quote"
 import SecondCard from "components/SecondCard"
 import Section from "components/Section"
 import ServicesBox from "components/ServicesBox"
-import Link from "next/link"
 import {
   AcademicCapIcon,
   ClipboardDocumentListIcon,
@@ -28,7 +27,7 @@ const Home = () => {
     <div className="overflow-hidden">
       <Header
         topTitle="treinador"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
+        description="Seja bem-vindo á sua jornada de transformação. Deixe me apresentar a você um consultor especialista em reabilitação e que te promove uma melhor qualidade de vida "
         ctaText="Quero saber mais!"
         ctaHref="#produtos"
         imageHeaderPath="inicio"
@@ -85,9 +84,7 @@ const Home = () => {
               />
             </div>
             <div className="w-full md:hidden">
-              <ButtonCTA href="#produtos">
-                Quero saber mais!
-              </ButtonCTA>
+              <ButtonCTA href="#produtos">Quero saber mais!</ButtonCTA>
             </div>
           </div>
         </Section>
@@ -128,9 +125,7 @@ const Home = () => {
                 Citation="prioridade do meu trabalho é cuidarmos da sua saúde de forma responsável! Através de uma abordagem individualizada, eu consigo proporcionar treinamentos de excelência, contribuindo para uma qualidade de vida e sensação de bem-estar excepcionais em sua vida!"
               />
               <div className="w-full sm:max-w-[256px] md:mt-2 mt-6">
-                <ButtonCTA href="#produtos">
-                  Quero saber mais!
-                </ButtonCTA>
+                <ButtonCTA href="#produtos">Quero saber mais!</ButtonCTA>
               </div>
             </div>
             <div className="w-full sm:max-w-[540px]">
@@ -147,7 +142,7 @@ const Home = () => {
             Confira alguns <span className="text-brandRed-500">feedbacks</span>
           </H2>
           <div className="px-4">
-            {/* <MySwiper /> */}
+            <MySwiper />
           </div>
         </Section>
         <Section>
@@ -161,7 +156,6 @@ const Home = () => {
             <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-6 sm:mt-12">
               <div className="flex flex-col gap-4">
                 <Box
-                  // icon={<TrophyIcon  />}
                   Icon={TrophyIcon}
                   boxTitle="Identificação dos objetivos"
                   boxDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi adipisci consequuntur perspiciatis quia sed."
@@ -205,7 +199,7 @@ const Home = () => {
               Conheça <span className="text-brandRed-500">meus serviços</span>
             </H2>
           </div>
-          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-12 justify-center items-center mt-6">
+          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-12 justify-center items-center mt-5">
             <ServicesBox
               href="/consultoria-presencial"
               product="Consultoria Presencial"

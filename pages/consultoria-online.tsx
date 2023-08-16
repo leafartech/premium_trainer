@@ -1,5 +1,4 @@
 import { StarIcon, UserIcon, BoltIcon } from "@heroicons/react/24/outline"
-import ButtonCTA from "components/ButtonCTA"
 import Card from "components/Card"
 import FAQ from "components/FAQ"
 import Footer from "components/Footer"
@@ -10,7 +9,6 @@ import Quote from "components/Quote"
 import SecondBox from "components/SecondBox"
 import Section from "components/Section"
 import TimeLine from "components/TimeLine"
-import Link from "next/link"
 
 const ConsultoriaOnline = () => {
   return (
@@ -18,8 +16,8 @@ const ConsultoriaOnline = () => {
       <Header
         topTitle="Consultoria Online"
         ctaText="Venha Fazer Parte!"
-        ctaHref="/consultoria-online"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
+        ctaHref="https://navarro.pay.yampi.com.br/r/3IMLBITUU2"
+        description="Receba orientação especializada onde quer que esteja. Nosso plano individualizado se adapta a sua rotina e a seus (males/defeitos///esqueci o nome), garantindo que você alcance seus objetivos de forma eficaz e eficiente!"
         imageHeaderPath="consultoria-online"
       >
         <H2 header={true}>
@@ -42,7 +40,7 @@ const ConsultoriaOnline = () => {
         </Section>
         <Section>
           <H2 center={true}>Foco da consultoria</H2>
-          <div className="w-full flex flex-col md:flex-row md:gap-10 mt-2">
+          <div className="mt-2 gap-4 w-full flex flex-col justify-center items-start md:flex-row md:justify-between md:gap-10">
             <Card
               Icon={UserIcon}
               title="Formação Acadêmica"
@@ -66,6 +64,7 @@ const ConsultoriaOnline = () => {
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
             valueOff="220"
             valueOn="180"
+            href="https://navarro.pay.yampi.com.br/r/3IMLBITUU2"
           />
         </Section>
         <Section>

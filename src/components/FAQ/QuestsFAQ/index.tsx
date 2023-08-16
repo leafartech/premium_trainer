@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline"
-import { FAQProps } from "../../../../types/faqProps"
+import { FAQProps } from "../../../types/faqProps"
 import useItemFAQ from "hooks/useItemFAQ"
 
 type QuestsFAQProps = {

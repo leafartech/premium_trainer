@@ -20,9 +20,9 @@ const AvaliacaoFisica = () => {
     <div className="overflow-hidden">
       <Header
         topTitle="Avaliação Física"
-        ctaText="Quero uma estratégia personalizada!"
-        ctaHref="/consultoria-presencial"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eos? Cum rerum labore maxime velit nemo sequi, repudiandae dolore voluptas, ipsum laborum incidunt! Amet blanditiis obcaecati hic vero, enim quaerat."
+        ctaText="Quero comprar agora!"
+        ctaHref="https://navarro.pay.yampi.com.br/r/I0UK1LE9D2"
+        description="Comece sua jornada com uma avaliação completa. Entendendo suas necessidades e objetivos, criaremos um plano personalizado para ajudá-lo a atingir o equilíbrio e a saúde que deseja."
         imageHeaderPath="avaliacao-fisica"
       >
         <H2 header={true}>
@@ -59,8 +59,9 @@ const AvaliacaoFisica = () => {
           <PurchaseCard
             titleCard="Avaliação Física"
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
-            valueOff="999"
-            valueOn="999"
+            valueOff="199"
+            valueOn="120"
+            href="https://navarro.pay.yampi.com.br/r/I0UK1LE9D2"
           />
         </Section>
         <Section>

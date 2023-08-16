@@ -1,11 +1,11 @@
-import { ChevronDownIcon, ChevronLeftIcon } from "@heroicons/react/24/outline"
-import Dropdown from "components/Adm/Dropdown"
+import { ChevronLeftIcon } from "@heroicons/react/24/outline"
 import Table from "components/Adm/Table"
 import Template from "components/Adm/Template"
 import Logo from "components/Logo"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { months } from "utils"
 
 const AgendaDay = () => {
   const [access, setAccess] = useState(false)
@@ -33,21 +33,6 @@ const AgendaDay = () => {
       }
     }, [])
   }
-
-  const months = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Agosto",
-    "Setembro",
-    "Outubro",
-    "Novembro",
-    "Dezembro"
-  ]
 
   const currentMonth = new Date().getMonth()
 

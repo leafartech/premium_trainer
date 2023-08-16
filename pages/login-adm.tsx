@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form"
 import { useState } from "react"
 import { useRouter } from "next/router"
 import { admLoginSchema } from "schemas/schemaFormAdm"
-import { LoginAdmSchemaType } from "../types/loginAdmTypes"
+import { LoginAdmSchemaType } from "types/loginAdmTypes"
 
 const LoginAdm = () => {
   const [messages, setMessages] = useState("")

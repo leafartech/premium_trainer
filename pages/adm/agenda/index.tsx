@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { ChevronLeftIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 import Logo from "components/Logo"
+import { months } from "utils"
 
 const Agenda = () => {
   const [access, setAccess] = useState(false)
@@ -22,21 +23,6 @@ const Agenda = () => {
       setAccess(true)
     }, [])
   }
-
-  const months = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Agosto",
-    "Setembro",
-    "Outubro",
-    "Novembro",
-    "Dezembro"
-  ]
 
   const currentMonth = new Date().getMonth()
 
