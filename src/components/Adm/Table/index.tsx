@@ -28,7 +28,7 @@ interface TableProps {
         },
         clients: { name: string, phone: string, goal: string, date?: { hour: string, day: string, month: string }, product: string[] }[]
     }
-    isClientsVerify: boolean
+    isClientsVerify?: boolean
 }
 
 const Table = ({ data, isClientsVerify }: TableProps) => {
