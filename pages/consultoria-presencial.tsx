@@ -45,7 +45,7 @@ const ConsultoriaPresencial = () => {
           </div>
           <TimeLine
             txt1={{ title: 'Agendamento simplificado', description: 'Em menos de 3 minutos, você consegue agendar a melhor data para você utilizando nosso sistema inteligente.' }}
-            txt2={{ title: 'Análise de objetivos', description: 'Chegada a data da consultoria, teremos uma conversa detalhada para analisar seu caso e criar uma estratégia exclusiva, direcionada às suas metas.' }}
+            txt2={{ title: 'Análise de objetivos', description: 'Chegada a data da consultoria, teremos uma conversa detalhada na JMClinic para analisar seu caso e criar uma estratégia exclusiva, direcionada às suas metas.' }}
             txt3={{ title: 'Avaliação física', description: 'Realizaremos uma dupla avaliação física (bioimpedância e antropométrica) para termos uma referência inicial.' }}
             txt4={{ title: 'Avaliação postural', description: 'Para finalizar, uma avaliação postural para descobrir possíveis desníveis, encurtamentos e desequilíbrios de forças.' }}
           />
