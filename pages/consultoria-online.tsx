@@ -44,7 +44,7 @@ const ConsultoriaOnline = () => {
           </div>
           <TimeLine
             txt1={{ title: 'Agendamento simplificado', description: 'Em menos de 3 minutos, você consegue agendar a melhor data para você utilizando nosso sistema inteligente.' }}
-            txt2={{ title: 'Análise de objetivos', description: 'Chegada a data da consultoria, teremos uma conversa detalhada para analisar seu caso e criar uma estratégia exclusiva, direcionada às suas metas.' }}
+            txt2={{ title: 'Análise de objetivos', description: 'Chegada a data da consultoria, teremos uma conversa detalhada no Google Meet para analisar seu caso e criar uma estratégia exclusiva, direcionada às suas metas.' }}
             txt3={{ title: 'Preparação', description: 'Aqui, irei estudar detalhadamente o seu caso para aplicar o meu conhecimento e experiência da melhor forma.' }}
             txt4={{ title: 'Entrega', description: 'Dentro de 72 horas, você receberá o acesso do aplicativo para visualizar o seu treino personalizado.' }}
           />
