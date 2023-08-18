@@ -18,7 +18,7 @@ const ConsultoriaPresencial = () => {
   ]
 
   return (
-    <div className="overflow-hidden">
+    <>
       <Header
         topTitle="Consultoria Presencial"
         ctaText="Quero uma estratégia personalizada agora!"
@@ -83,7 +83,7 @@ const ConsultoriaPresencial = () => {
         </Section>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

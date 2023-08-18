@@ -12,7 +12,7 @@ import TimeLine from "components/TimeLine"
 
 const ConsultoriaOnline = () => {
   return (
-    <div className="overflow-hidden">
+    <>
       <Header
         topTitle="Consultoria Online"
         ctaText="Venha Fazer Parte!"
@@ -84,7 +84,7 @@ const ConsultoriaOnline = () => {
         </Section>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -24,7 +24,7 @@ import MySwiper from "components/MySwiper"
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
+    <>
       <Header
         topTitle="treinador"
         description="Seja bem-vindo á sua jornada de transformação. Deixe me apresentar a você um consultor especialista em reabilitação e que te promove uma melhor qualidade de vida "
@@ -225,7 +225,7 @@ const Home = () => {
         </Section>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

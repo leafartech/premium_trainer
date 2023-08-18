@@ -17,7 +17,7 @@ const AvaliacaoFisica = () => {
     "Procura melhorar a perfomance física e mental."
   ]
   return (
-    <div className="overflow-hidden">
+    <>
       <Header
         topTitle="Avaliação Física"
         ctaText="Quero comprar agora!"
@@ -81,7 +81,7 @@ const AvaliacaoFisica = () => {
         </Section>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
