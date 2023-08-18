@@ -42,7 +42,7 @@ const AvaliacaoFisica = () => {
           </div>
           <TimeLine
             txt1={{ title: 'Agendamento simplificado', description: 'Em menos de 3 minutos, você consegue agendar a melhor data para você utilizando nosso sistema inteligente.' }}
-            txt2={{ title: 'Avaliação', description: 'Realizaremos uma dupla avaliação física (bioimpedância e antropométrica) para termos uma referência inicial.' }}
+            txt2={{ title: 'Avaliação', description: 'Realizaremos uma dupla avaliação física na JMClinic (bioimpedância e antropométrica) para termos uma referência inicial.' }}
             txt3={{ title: 'Relatório', description: 'Um relatório de toda a avaliação é entregue para que o guarde consigo como referência do seu físico atual.' }}
           />
         </Section>
