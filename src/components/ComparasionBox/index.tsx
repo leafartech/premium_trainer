@@ -51,7 +51,7 @@ const ComparisionBox = () => {
           </div>
         </div>
       </div>
-      <div className="w-14 h-14 flex justify-center items-center -translate-y-[68px] rounded-full bg-brandWhite border-2 text-brandWhite absolute md:translate-x-3 md:translate-y-0">
+      <div className="w-14 h-14 flex justify-center items-center -translate-y-[80px] rounded-full bg-brandWhite border-2 text-brandWhite absolute md:translate-x-3 md:translate-y-0">
         <XMarkIcon className="w-10 h-10 text-brandBlack" />
       </div>
       <div className="max-w-[482px] sm:h-[452px] flex flex-col bg-brandWhite rounded-md overflow-hidden">
