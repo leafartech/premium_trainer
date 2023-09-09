@@ -68,7 +68,7 @@ const PurchaseCard = ({
                 {highlited ? 'Selecionar plano:' : 'Planos'}
                 <a href={`${hrefList[0]}`} className="text-red-500 font-medium uppercase"> mensal</a>,
                 <a href={`${hrefList[1]}`} className="text-red-500 font-medium uppercase"> trimestral</a>,
-                <a href={`${hrefList[2]}`} className="text-red-500 font-medium uppercase"> semetral</a> e
+                <a href={`${hrefList[2]}`} className="text-red-500 font-medium uppercase"> semestral</a> e
                 <a href={`${hrefList[3]}`} className="text-red-500 font-medium uppercase"> anual</a>.
               </>
             </p>
