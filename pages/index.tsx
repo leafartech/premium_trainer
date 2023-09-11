@@ -33,7 +33,7 @@ const Home = () => {
         imageHeaderPath="inicio"
       >
         <H2 header={true}>
-          Te ajudo a conquistar o<span className="text-brandRed-500">shape dos seus sonhos</span>
+          Te ajudo a conquistar o <span className="text-brandRed-500">shape dos seus sonhos</span>
         </H2>
       </Header>
       <main className="sm:-mt-16">
