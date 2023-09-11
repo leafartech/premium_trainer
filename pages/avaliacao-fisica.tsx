@@ -69,7 +69,6 @@ const AvaliacaoFisica = () => {
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
             valueOff="199"
             valueOn="120"
-            href="https://pay.kiwify.com.br/FCBG4ig"
             hrefList={['https://pay.kiwify.com.br/FCBG4ig']}
           />
         </Section>
