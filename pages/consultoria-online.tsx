@@ -72,7 +72,6 @@ const ConsultoriaOnline = () => {
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
             valueOff="219"
             valueOn="180"
-            href="https://pay.kiwify.com.br/gBaughf"
             hrefList={['https://pay.kiwify.com.br/kE3qpTT', 'https://pay.kiwify.com.br/OUMHcR7', 'https://pay.kiwify.com.br/aODJ8MF', 'https://pay.kiwify.com.br/aODJ8MF']}
           />
         </Section>
