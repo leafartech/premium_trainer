@@ -18,7 +18,6 @@ import {
   ClipboardDocumentCheckIcon,
   PresentationChartLineIcon,
   ArrowPathRoundedSquareIcon,
-  BugAntIcon,
   MapIcon
 } from "@heroicons/react/24/outline"
 import MySwiper from "components/MySwiper"
@@ -34,19 +33,14 @@ const Home = () => {
         imageHeaderPath="inicio"
       >
         <H2 header={true}>
-          Te ajudo a conquistar o{" "}
-          <span className="text-brandRed-500">shape dos seus sonhos</span>
+          Te ajudo a conquistar o<span className="text-brandRed-500">shape dos seus sonhos</span>
         </H2>
       </Header>
       <main className="sm:-mt-16">
         <Section>
           <div className="flex flex-col w-full">
             <div className="w-full flex justify-center md:hidden">
-              <img
-                className="w-myLg mt-3 rounded-md"
-                src="./images/inicio0.png"
-                alt="Foto do João Navarro"
-              />
+              <img className="w-myLg mt-4 rounded-md" src="./images/inicio0.png" alt="Foto do João Navarro" />
             </div>
             <div className="flex flex-col sm:items-center">
               <div className="w-full mt-4 md:mt-0 px-1 md:flex md:justify-center">
@@ -56,18 +50,13 @@ const Home = () => {
                 <H2 center={true}>Quem é João Navarro</H2>
               </div>
               <p className="text-zinc-300 text-justify max-w-4xl md:text-xl sm:text-center">
-                Apaixonado por saúde e bem estar. Bacharel em educação
-                física, pós graduado em Bodybuilding & Coach, pela Uniguaçu, e mais de 9 anos de experiência no mundo do treinamento,
-                ele é um profissional dedicado e compromissado com o sucesso de
-                seus alunos.{" "}
+                Apaixonado por saúde e bem estar. Bacharel em educação física, pós graduado em Bodybuilding & Coach,
+                pela Uniguaçu, e mais de 9 anos de experiência no mundo do treinamento, ele é um profissional dedicado e
+                compromissado com o sucesso de seus alunos.
               </p>
             </div>
             <div className="w-full hidden md:justify-center md:flex">
-              <img
-                className="w-myLg mt-3 max-w-2xl mb-4"
-                src="./images/inicio0.png"
-                alt="Foto do João Navarro"
-              />
+              <img className="w-myLg mt-3 max-w-2xl mb-4" src="./images/inicio0.png" alt="Foto do João Navarro" />
             </div>
             <div className="py-3 gap-4 w-full flex flex-col justify-center items-start md:flex-row md:justify-between md:gap-10">
               <Card
@@ -94,15 +83,11 @@ const Home = () => {
         <div className="hidden md:block line-gradient h-1"></div>
         <Section>
           <div className="w-full md:hidden">
-            <img
-              className="w-myLg md:w-myXl mb-4"
-              src="./images/inicio2.png"
-              alt="Foto do João Navarro"
-            />
+            <img className="w-myLg md:w-myXl mb-4" src="./images/inicio2.png" alt="Foto do João Navarro" />
           </div>
           <div className="md:text-center">
             <H2 center={true}>
-              O meu trabalho é ideal para{" "}
+              O meu trabalho é ideal para
               <span className="text-brandRed-500">você que:</span>
             </H2>
             <div className="sm:mt-16 sm:mb-24 flex flex-col md:flex-row items-start sm:justify-center sm:items-center sm:gap-12">
@@ -132,11 +117,7 @@ const Home = () => {
               </div>
             </div>
             <div className="w-full sm:max-w-[540px]">
-              <img
-                className="w-myLg md:w-myXl mt-4"
-                src="./images/inicio3.png"
-                alt="Foto do João Navarro"
-              />
+              <img className="w-myLg md:w-myXl mt-4" src="./images/inicio3.png" alt="Foto do João Navarro" />
             </div>
           </div>
         </Section>
@@ -152,7 +133,7 @@ const Home = () => {
           <div className="md:flex md:flex-col md:justify-center md:items-center sm:mb-12">
             <div className="md:text-center">
               <H2>
-                Por que meus alunos têm tantos{" "}
+                Por que meus alunos têm tantos
                 <span className="text-brandRed-500">resultados?</span>
               </H2>
             </div>
@@ -213,17 +194,11 @@ const Home = () => {
               product="Consultoria Online"
               bottomSentence="MUDE, TREINE, SUPERE"
             />
-            <ServicesBox
-              href="/avaliacao-fisica"
-              product="Avalição Física"
-              bottomSentence="MOLDANDO SEU FÍSICO"
-            />
+            <ServicesBox href="/avaliacao-fisica" product="Avalição Física" bottomSentence="MOLDANDO SEU FÍSICO" />
           </div>
         </Section>
         <Section>
-          <h2 className="tracking-[12px] text-center text-2xl sm:text-4xl text-brandWhite">
-            FAQ
-          </h2>
+          <h2 className="tracking-[12px] text-center text-2xl sm:text-4xl text-brandWhite">FAQ</h2>
           <FAQ />
         </Section>
       </main>
