@@ -73,7 +73,6 @@ const ConsultoriaPresencial = () => {
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
             valueOff="299"
             valueOn="220"
-            href="https://pay.kiwify.com.br/GsM0yFl"
             hrefList={['https://pay.kiwify.com.br/h61XBU7', 'https://pay.kiwify.com.br/y5ozQMc', 'https://pay.kiwify.com.br/0LA5Vou', 'https://pay.kiwify.com.br/YFvUtNu']}
           />
         </Section>
