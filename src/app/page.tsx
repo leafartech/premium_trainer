@@ -20,7 +20,8 @@ import {
   ArrowPathRoundedSquareIcon,
   MapIcon,
 } from '@heroicons/react/24/outline'
-import MySwiper from '@/components/MySwiper'
+import Feedbacks from '@/components/Feedbacks'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -34,17 +35,19 @@ export default function Page() {
       >
         <H2 header={true}>
           Te ajudo a conquistar o
-          <span className="text-brandRed-500">shape dos seus sonhos</span>
+          <span className="text-brandRed-500"> shape dos seus sonhos</span>
         </H2>
       </Header>
       <main className="sm:-mt-16">
         <Section>
           <div className="flex flex-col w-full">
             <div className="w-full flex justify-center md:hidden">
-              <img
+              <Image
                 className="w-myLg mt-4 rounded-md"
-                src="./images/inicio0.png"
+                src="/images/inicio0.png"
                 alt="Foto do João Navarro"
+                width={459}
+                height={500}
               />
             </div>
             <div className="flex flex-col sm:items-center">
@@ -52,7 +55,9 @@ export default function Page() {
                 <MiniBox text="treinador" />
               </div>
               <div className="my-4 md:text-center">
-                <H2 center={true}>Quem é João Navarro</H2>
+                <H2 center={true}>
+                  Quem é <span className="text-brandRed-500">João Navarro</span>
+                </H2>
               </div>
               <p className="text-zinc-300 text-justify max-w-4xl md:text-xl sm:text-center">
                 Apaixonado por saúde e bem estar. Bacharel em educação física,
@@ -63,10 +68,12 @@ export default function Page() {
               </p>
             </div>
             <div className="w-full hidden md:justify-center md:flex">
-              <img
+              <Image
                 className="w-myLg mt-3 max-w-2xl mb-4"
-                src="./images/inicio0.png"
-                alt="Foto do João Navarro"
+                src="/images/inicio0.png"
+                alt="Foto do João Navarro no celular sorrindo"
+                width={500}
+                height={500}
               />
             </div>
             <div className="py-3 gap-4 w-full flex flex-col justify-center items-start md:flex-row md:justify-between md:gap-10">
@@ -94,16 +101,18 @@ export default function Page() {
         <div className="hidden md:block line-gradient h-1"></div>
         <Section>
           <div className="w-full md:hidden">
-            <img
+            <Image
               className="w-myLg md:w-myXl mb-4"
-              src="./images/inicio2.png"
+              src="/images/inicio2.png"
               alt="Foto do João Navarro"
+              width={450}
+              height={450}
             />
           </div>
           <div className="md:text-center">
             <H2 center={true}>
               O meu trabalho é ideal para
-              <span className="text-brandRed-500">você que:</span>
+              <span className="text-brandRed-500"> você que:</span>
             </H2>
             <div className="sm:mt-16 sm:mb-24 flex flex-col md:flex-row items-start sm:justify-center sm:items-center sm:gap-12">
               <div>
@@ -132,10 +141,12 @@ export default function Page() {
               </div>
             </div>
             <div className="w-full sm:max-w-[540px]">
-              <img
+              <Image
                 className="w-myLg md:w-myXl mt-4"
-                src="./images/inicio3.png"
+                src="/images/inicio3.png"
                 alt="Foto do João Navarro"
+                width={450}
+                height={450}
               />
             </div>
           </div>
@@ -145,7 +156,7 @@ export default function Page() {
             Confira alguns <span className="text-brandRed-500">feedbacks</span>
           </H2>
           <div className="px-4">
-            <MySwiper />
+            <Feedbacks />
           </div>
         </Section>
         <Section>

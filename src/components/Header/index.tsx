@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import Image from 'next/image'
 import { ReactNode } from 'react'
 
 type HeaderProps = {
@@ -22,22 +23,29 @@ const Header = ({
     <header className="relative min-h-screen sm:flex sm:flex-row-reverse sm:items-center sm:justify-center sm:gap-12">
       <Navbar />
       <div className="w-full absolute md:top-24 lg:top-12 left-0 hidden sm:block -z-10">
-        <img
-          src={`./images/inicioPc.png`}
+        <Image
+          src="/images/inicioPc.png"
           alt="Imagem de fundo"
-          className="h-[700px]"
+          width={1920}
+          height={1080}
         />
       </div>
       <div className="">
-        <img
-          src={`./images/${imageHeaderPath}.png`}
-          className="block sm:hidden"
-          alt=""
+        <Image
+          src={`/images/${imageHeaderPath}.png`}
+          className="block sm:hidden w-full"
+          alt="Imagem do João Navarro"
+          quality={100}
+          width={375}
+          height={740}
         />
-        <img
-          src={`./images/${imageHeaderPath}Pc2.png`}
+        <Image
+          src={`/images/${imageHeaderPath}Pc2.png`}
           className="hidden sm:block"
-          alt=""
+          alt="Imagem do João Navarro"
+          width={450}
+          height={535}
+          quality={100}
         />
       </div>
       <div className="absolute top-16 flex flex-col justify-center items-center w-full sm:opacity-0">
