@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface TimeLineProps {
   txt1: { title: string; description: string }
   txt2: { title: string; description: string }
@@ -28,10 +30,12 @@ const TimeLine = ({ txt1, txt2, txt3, txt4 }: TimeLineProps) => {
           <div className="relative ps-8 w-full flex justify-start">
             <div className="absolute left-0 bottom-1 w-6 h-6 border-l-[3px] border-dashed border-l-brandRed-500 -rotate-90"></div>
             <h3 className="relative flex items-center text-brandWhite text-xl md:text-2xl ms-1">
-              <img
-                src="./images/locIcon.png"
+              <Image
+                src="/images/locIcon.png"
                 alt="ìcone da linha do tempo"
-                className=" absolute -left-5 h-5 w-4"
+                className="absolute -left-5"
+                width={20}
+                height={16}
               />
               <span>1- {txt1.title}</span>
             </h3>
@@ -44,10 +48,12 @@ const TimeLine = ({ txt1, txt2, txt3, txt4 }: TimeLineProps) => {
           <div className="relative ps-8 w-full flex justify-start">
             <div className="absolute left-0 bottom-1 w-6 h-6 border-l-[3px] border-dashed border-l-brandRed-500 -rotate-90"></div>
             <h3 className="relative md:text-2xl flex items-center text-brandWhite text-xl ms-1">
-              <img
-                src="./images/locIcon.png"
+              <Image
+                src="/images/locIcon.png"
                 alt="ìcone da linha do tempo"
-                className=" absolute -left-5 h-5 w-4"
+                className="absolute -left-5"
+                width={20}
+                height={16}
               />
               <span>2- {txt2.title}</span>
             </h3>
@@ -60,10 +66,12 @@ const TimeLine = ({ txt1, txt2, txt3, txt4 }: TimeLineProps) => {
           <div className="relative ps-8 w-full flex justify-start">
             <div className="absolute left-0 bottom-1 w-6 h-6 border-l-[3px] border-dashed border-l-brandRed-500 -rotate-90"></div>
             <h3 className="relative md:text-2xl flex items-center text-brandWhite text-xl ms-1">
-              <img
-                src="./images/locIcon.png"
+              <Image
+                src="/images/locIcon.png"
                 alt="ìcone da linha do tempo"
-                className=" absolute -left-5 h-5 w-4"
+                className="absolute -left-5"
+                width={20}
+                height={16}
               />
               <span>3 - {txt3.title}</span>
             </h3>
@@ -77,10 +85,12 @@ const TimeLine = ({ txt1, txt2, txt3, txt4 }: TimeLineProps) => {
             <div className="relative ps-8 w-full flex justify-start">
               <div className="absolute left-0 bottom-1 w-6 h-6 border-l-[3px] border-dashed border-l-brandRed-500 -rotate-90"></div>
               <h3 className="relative md:text-2xl flex items-center text-brandWhite text-xl ms-1">
-                <img
-                  src="./images/locIcon.png"
+                <Image
+                  src="/images/locIcon.png"
                   alt="ìcone da linha do tempo"
-                  className=" absolute -left-5 h-5 w-4"
+                  className="absolute -left-5"
+                  width={20}
+                  height={16}
                 />
                 <span>4- {txt4.title}</span>
               </h3>

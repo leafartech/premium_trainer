@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-type H2Props = {
+interface H2Props {
   children: ReactNode
   header?: boolean
   center?: boolean

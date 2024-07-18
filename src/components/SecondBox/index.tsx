@@ -1,4 +1,4 @@
-type SecondBoxProps = {
+interface SecondBoxProps {
   titleBox: string
   descriptionBox: string
 }

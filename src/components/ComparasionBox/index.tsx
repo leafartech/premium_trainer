@@ -1,4 +1,5 @@
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const ComparisionBox = () => {
   return (
@@ -10,42 +11,57 @@ const ComparisionBox = () => {
         </h3>
         <div className="flex flex-col gap-3 py-6">
           <div className="flex justify-start items-center gap-2 py-1 px-4">
-            <img
-              src="./images/xIcon3.png"
+            <Image
+              src="/images/xIcon3.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem é preguiçoso.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/xIcon3.png"
+            <Image
+              src="/images/xIcon3.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Pessoas sem compromisso.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/xIcon3.png"
+            <Image
+              src="/images/xIcon3.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem quer resultado imediato.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/xIcon3.png"
+            <Image
+              src="/images/xIcon3.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem não quer mudar de vida.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/xIcon3.png"
+            <Image
+              src="/images/xIcon3.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem quer ficar na zona de conforto.</p>
           </div>
@@ -61,42 +77,57 @@ const ComparisionBox = () => {
         </h3>
         <div className="flex flex-col gap-3 py-6">
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/checkIcon2.png"
+            <Image
+              src="/images/checkIcon2.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Pessoas com força de vontade.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/checkIcon2.png"
+            <Image
+              src="/images/checkIcon2.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem quer mais qualidade de vida.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/checkIcon2.png"
+            <Image
+              src="/images/checkIcon2.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quer busca ser mais produtivo.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/checkIcon2.png"
+            <Image
+              src="/images/checkIcon2.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem procura estratégia individualizada.</p>
           </div>
           <div className="flex justify-start items-center gap-2 py-3 px-4">
-            <img
-              src="./images/checkIcon2.png"
+            <Image
+              src="/images/checkIcon2.png"
               alt="Check icon"
-              className="h-5 w-5 md:h-8 md:w-8"
+              className="md:h-8 md:w-8"
+              width={20}
+              height={20}
+              quality={100}
             />
             <p className="text-xl">Quem está iniciando nos treinamentos.</p>
           </div>

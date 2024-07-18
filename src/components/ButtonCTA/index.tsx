@@ -1,5 +1,7 @@
-type ButtonCTAProps = {
-  children: React.ReactNode
+import { ReactNode } from 'react'
+
+interface ButtonCTAProps {
+  children: ReactNode
   href: string
 }
 

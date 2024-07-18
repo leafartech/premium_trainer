@@ -1,13 +1,12 @@
-type LogoProps = {
-  third?: boolean
-}
+import Image from 'next/image'
 
-const Logo = ({ third }: LogoProps) => {
+const Logo = () => {
   return (
-    <img
-      src={`${!third ? '../images/logo01.png' : '../../images/logo01.png'}`}
-      alt="Logo do João"
-      className="h-7 w-7"
+    <Image
+      src="/images/logo01.png"
+      alt="Logo do João Navarro"
+      width={28}
+      height={28}
     />
   )
 }

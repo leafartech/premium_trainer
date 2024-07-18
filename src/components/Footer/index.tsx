@@ -6,7 +6,6 @@ const Footer = () => {
       <div>
         <Logo />
       </div>
-      {/* Subistiuir pela LOGO */}
       <h3 className="text-sm text-zinc-500 text-center">
         Todos os direitos reservados &copy; João Navarro.
       </h3>

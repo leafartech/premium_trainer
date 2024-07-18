@@ -1,6 +1,6 @@
 import { ElementType } from 'react'
 
-type CardProps = {
+interface CardProps {
   Icon: ElementType
   title: string
   description: string

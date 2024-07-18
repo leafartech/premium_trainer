@@ -1,6 +1,7 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
-type ServicesBoxProps = {
+interface ServicesBoxProps {
   href: string
   product: string
   bottomSentence: string
@@ -9,7 +10,13 @@ type ServicesBoxProps = {
 const ServicesBox = ({ bottomSentence, href, product }: ServicesBoxProps) => {
   return (
     <div className="product_gradient w-full sm:max-w-md h-80 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl">
-      <img src="./images/logo01.png" alt="Logo" className="w-10 h-12" />
+      <Image
+        src="/images/logo01.png"
+        alt="Logo"
+        width={40}
+        height={48}
+        quality={100}
+      />
       <div className="w-full flex flex-col items-center justify-center gap-4">
         <h4 className="text-[24px] font-bold text-brandWhite text-center">
           {product}

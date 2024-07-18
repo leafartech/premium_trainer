@@ -8,6 +8,7 @@ import SecondBox from '@/components/SecondBox'
 import SecondCard from '@/components/SecondCard'
 import Section from '@/components/Section'
 import TimeLine from '@/components/TimeLine'
+import Image from 'next/image'
 
 const ConsultoriaPresencial = () => {
   const secondCardDataTitles = [
@@ -79,7 +80,13 @@ const ConsultoriaPresencial = () => {
             </div>
           </div>
           <div className="w-full flex items-center justify-center mt-12">
-            <img src="./images/allPages.png" className="" alt="" />
+            <Image
+              src="/images/qualidade-de-vida.png"
+              alt="Imagem do João Navarro com uma mulher treinando"
+              width={550}
+              height={380}
+              quality={100}
+            />
           </div>
         </Section>
         <span id="produto"></span>

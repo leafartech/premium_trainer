@@ -1,4 +1,6 @@
-type PurchaseCardProps = {
+import Image from 'next/image'
+
+interface PurchaseCardProps {
   titleCard: string
   descriptionCard: string
   valueOff: string
@@ -79,10 +81,13 @@ const PurchaseCard = ({
       </div>
       <div className="flex flex-col gap-3 mt-3 w-full">
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">
             Entrarei em contato em até 72h após o pagamento,{' '}
@@ -90,58 +95,76 @@ const PurchaseCard = ({
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">
             Agendamento simplificado.
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">Estratégia exclusiva.</p>
         </div>
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">
             Acesso a aplicativo no celular.
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">
             Análise detalhada dos objetivos.
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">
             Acompanhamento de resultados.
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <img
-            src="./images/checkIcon3.png"
+          <Image
+            src="/images/checkIcon3.png"
             alt="Ícone de check"
             className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
           />
           <p className="text-brandWhite md:text-lg">
             Liberdade para tirar dúvidas.

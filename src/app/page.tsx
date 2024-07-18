@@ -48,6 +48,7 @@ export default function Page() {
                 alt="Foto do João Navarro"
                 width={459}
                 height={500}
+                quality={100}
               />
             </div>
             <div className="flex flex-col sm:items-center">
@@ -74,6 +75,7 @@ export default function Page() {
                 alt="Foto do João Navarro no celular sorrindo"
                 width={500}
                 height={500}
+                quality={100}
               />
             </div>
             <div className="py-3 gap-4 w-full flex flex-col justify-center items-start md:flex-row md:justify-between md:gap-10">

@@ -1,5 +1,6 @@
 import { FaDumbbell } from 'react-icons/fa6'
-type MiniBoxProps = {
+
+interface MiniBoxProps {
   text: string
 }
 

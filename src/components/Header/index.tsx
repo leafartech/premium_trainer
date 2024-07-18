@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
-type HeaderProps = {
+interface HeaderProps {
   topTitle: string
   children: ReactNode
   ctaText: string
@@ -28,6 +28,7 @@ const Header = ({
           alt="Imagem de fundo"
           width={1920}
           height={1080}
+          quality={100}
         />
       </div>
       <div className="">

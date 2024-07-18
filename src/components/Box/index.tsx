@@ -1,6 +1,6 @@
 import { ElementType } from 'react'
 
-type BoxProps = {
+interface BoxProps {
   Icon: ElementType
   boxTitle: string
   boxDescription: string
