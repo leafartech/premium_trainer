@@ -1,17 +1,26 @@
 interface TimeLineProps {
-  txt1: { title: string, description: string }
-  txt2: { title: string, description: string }
-  txt3: { title: string, description: string }
-  txt4?: { title: string, description: string }
+  txt1: { title: string; description: string }
+  txt2: { title: string; description: string }
+  txt3: { title: string; description: string }
+  txt4?: { title: string; description: string }
 }
 
 const TimeLine = ({ txt1, txt2, txt3, txt4 }: TimeLineProps) => {
   return (
     <div className="w-full flex justify-start px-2 mt-4">
-      <div className={`bg-brandRed-500 w-3 sm:w-1 relative ${!txt4 ? 'h-[340px] md:h-[330px]' : 'h-[450px] md:h-[450px]'}`}>
-
-        <svg className="h-6 w-6 text-brandRed-500 absolute -bottom-4 left-[-13px] md:left-[-10px]" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.8926 22.2332C12.5227 22.9653 11.4773 22.9653 11.1074 22.2332L0.608616 1.45091C0.272603 0.785773 0.755996 0 1.50119 0L22.4988 0C23.244 0 23.7274 0.785775 23.3914 1.45091L12.8926 22.2332Z" fill="#D30D0C" />
+      <div
+        className={`bg-brandRed-500 w-3 sm:w-1 relative ${!txt4 ? 'h-[340px] md:h-[330px]' : 'h-[450px] md:h-[450px]'}`}
+      >
+        <svg
+          className="h-6 w-6 text-brandRed-500 absolute -bottom-4 left-[-13px] md:left-[-10px]"
+          viewBox="0 0 24 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.8926 22.2332C12.5227 22.9653 11.4773 22.9653 11.1074 22.2332L0.608616 1.45091C0.272603 0.785773 0.755996 0 1.50119 0L22.4988 0C23.244 0 23.7274 0.785775 23.3914 1.45091L12.8926 22.2332Z"
+            fill="#D30D0C"
+          />
         </svg>
       </div>
       <div className="flex flex-col items-start gap-6">

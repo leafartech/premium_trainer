@@ -1,33 +1,32 @@
-"use client"
+'use client'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { FreeMode, Pagination } from 'swiper/modules'
 
-import "swiper/css"
-import "swiper/css/free-mode"
-import "swiper/css/pagination"
-
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/pagination'
 
 const MySwiper = () => {
   return (
     <div className="mt-4">
       <Swiper
         pagination={{
-          clickable: true
+          clickable: true,
         }}
         breakpoints={{
           640: {
-            slidesPerView: 2
+            slidesPerView: 2,
           },
           768: {
-            slidesPerView: 3
+            slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 3
+            slidesPerView: 3,
           },
           1260: {
-            slidesPerView: 3
-          }
+            slidesPerView: 3,
+          },
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"

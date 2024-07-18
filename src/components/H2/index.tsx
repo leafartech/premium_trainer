@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
 type H2Props = {
   children: ReactNode
@@ -7,7 +7,9 @@ type H2Props = {
 }
 const H2 = ({ children, header, center }: H2Props) => {
   return (
-    <h2 className={`font-bold text-brandWhite ${center ? 'sm:text-center' : 'text-left'} ${header ? 'text-3xl sm:text-5xl' : 'text-2xl sm:text-4xl'}`}>
+    <h2
+      className={`font-bold text-brandWhite ${center ? 'sm:text-center' : 'text-left'} ${header ? 'text-3xl sm:text-5xl' : 'text-2xl sm:text-4xl'}`}
+    >
       {children}
     </h2>
   )

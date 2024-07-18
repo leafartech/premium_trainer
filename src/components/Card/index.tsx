@@ -1,4 +1,4 @@
-import { ElementType } from "react"
+import { ElementType } from 'react'
 
 type CardProps = {
   Icon: ElementType
@@ -16,7 +16,9 @@ const Card = ({ Icon, title, description }: CardProps) => {
         <Icon className="h-9 w-9 md:w-11 md:h-11" />
         <h3 className="text-xl md:text-[22px] font-medium">{title}</h3>
       </div>
-      <p className="text-zinc-300 md:text-lg ms-10 md:ms-0 sm:text-center">{description}</p>
+      <p className="text-zinc-300 md:text-lg ms-10 md:ms-0 sm:text-center">
+        {description}
+      </p>
     </div>
   )
 }

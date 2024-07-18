@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
 
 const useScroll = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -10,19 +10,19 @@ const useScroll = () => {
       setScrollPosition(window.scrollY)
     }
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   const threshold = 400
   const backgroundColor =
-    scrollPosition >= threshold ? "bg-brandRed-500/80" : "transparent"
+    scrollPosition >= threshold ? 'bg-brandRed-500/80' : 'transparent'
 
   return {
-    backgroundColor
+    backgroundColor,
   }
 }
 

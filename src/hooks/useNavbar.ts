@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import { useState } from "react"
+import { useState } from 'react'
 
 const useNavbar = () => {
   const [navbarToggle, setNavbarToggle] = useState(false)
@@ -11,7 +11,7 @@ const useNavbar = () => {
 
   return {
     navbarToggle,
-    toggleNavbar
+    toggleNavbar,
   }
 }
 

@@ -1,6 +1,7 @@
-import { ChevronRightIcon } from "@heroicons/react/24/outline"
-import { FAQProps } from "../../../types/faqProps"
-import { useItemFAQ } from "@/hooks/useItemFAQ"
+/* eslint-disable prettier/prettier */
+import { ChevronRightIcon } from '@heroicons/react/24/outline'
+import { FAQProps } from '../../../types/faqProps'
+import { useItemFAQ } from '@/hooks/useItemFAQ'
 
 type QuestsFAQProps = {
   quest: string
@@ -12,7 +13,7 @@ const QuestsFAQ = ({ quest, answer, data }: QuestsFAQProps) => {
 
   return (
     <div
-      className={`flex flex-col w-full items-center duration-500 py-4 group ${item.active === 1 ? "is-active bg-brandBlack" : ""
+      className={`flex flex-col w-full items-center duration-500 py-4 group ${item.active === 1 ? 'is-active bg-brandBlack' : ''
         }`}
     >
       <button

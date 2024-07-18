@@ -3,8 +3,7 @@ type SecondBoxProps = {
   descriptionBox: string
 }
 
-
-const SecondBox = ({ titleBox, descriptionBox  }: SecondBoxProps) => {
+const SecondBox = ({ titleBox, descriptionBox }: SecondBoxProps) => {
   return (
     <div className="w-full second-box-gradient py-8">
       <div className="flex flex-col justify-center items-center gap-1">

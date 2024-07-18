@@ -1,5 +1,5 @@
-import QuoteLeft from "./QuoteLeft"
-import QuoteRight from "./QuoteRight"
+import QuoteLeft from './QuoteLeft'
+import QuoteRight from './QuoteRight'
 
 type QuoteProps = {
   Citation: string
