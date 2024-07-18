@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import { FAQProps } from "../types/faqProps"
 
@@ -14,4 +16,4 @@ const useItemFAQ = ({ ...data }: FAQProps) => {
   }
 }
 
-export default useItemFAQ
+export { useItemFAQ }

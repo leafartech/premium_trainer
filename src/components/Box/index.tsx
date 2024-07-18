@@ -5,6 +5,7 @@ type BoxProps = {
   boxTitle: string
   boxDescription: string
 }
+
 const Box = ({ Icon, boxTitle, boxDescription }: BoxProps) => {
   return (
     <div

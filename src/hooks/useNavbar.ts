@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 
 const useNavbar = () => {
@@ -13,4 +15,4 @@ const useNavbar = () => {
   }
 }
 
-export default useNavbar
+export { useNavbar }

@@ -1,10 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react"
+"use client"
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination } from 'swiper/modules';
 
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
 
-import { FreeMode, Pagination } from "swiper"
 
 const MySwiper = () => {
   return (

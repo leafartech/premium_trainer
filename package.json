@@ -1,30 +1,31 @@
 {
+  "name": "premium_trainer",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "@types/bcrypt": "^5.0.0",
     "@types/date-fns": "^2.6.0",
-    "@types/swiper": "^6.0.0",
-    "bcrypt": "^5.1.0",
+    "autoprefixer": "^10.4.19",
     "date-fns": "^2.30.0",
-    "mongodb": "^4.8.1",
-    "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
     "react-icons": "^4.10.1",
-    "swiper": "9.4.1"
+    "swiper": "^11.1.5"
   },
   "devDependencies": {
-    "@types/node": "18.7.5",
-    "@types/react": "16.9.17",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3",
-    "typescript": "4.6.3"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

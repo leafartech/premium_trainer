@@ -3,15 +3,12 @@ import {
   HomeIcon,
   UsersIcon,
   IdentificationIcon,
-  UserCircleIcon
 } from "@heroicons/react/24/outline"
-import useNavbar from "hooks/useNavbar"
-import Link from "next/link"
-import { useRouter } from "next/router"
+import { useNavbar } from "@/hooks/useNavbar"
+import NavbarLink from "../NavbarLink"
 
 const NavbarItems = () => {
   const { navbarToggle, toggleNavbar } = useNavbar()
-  const router = useRouter()
 
   return (
     <>
@@ -40,52 +37,28 @@ const NavbarItems = () => {
           } `}
       >
         <li>
-          <Link
-            href="/"
-            className={`${router.pathname === "/"
-              ? "text-white font-bold"
-              : "text-white/60"
-              } trasition font-medium hover:text-white flex gap-2 items-center `}
-          >
+          <NavbarLink href="/">
             <HomeIcon className="w-6 h-6 md:hidden" />
             Início
-          </Link>
+          </NavbarLink>
         </li>
         <li>
-          <Link
-            href="/avaliacao-fisica"
-            className={`${router.pathname === "/avaliacao-fisica"
-              ? "text-white font-bold"
-              : "text-white/60"
-              } trasition hover:text-white font-medium flex gap-2 items-center`}
-          >
+          <NavbarLink href="/avaliacao-fisica">
             <IdentificationIcon className="w-6 h-6 md:hidden" />
             Avaliação física
-          </Link>
+          </NavbarLink>
         </li>
         <li>
-          <Link
-            href="/consultoria-presencial"
-            className={`${router.pathname === "/consultoria-presencial"
-              ? "text-white font-bold"
-              : "text-white/60"
-              } trasition hover:text-white font-medium flex gap-2 items-center`}
-          >
+          <NavbarLink href="/consultoria-presencial">
             <UsersIcon className="w-6 h-6 md:hidden" />
             Consultoria Presencial
-          </Link>
+          </NavbarLink>
         </li>
         <li>
-          <Link
-            href="/consultoria-online"
-            className={`${router.pathname === "/consultoria-online"
-              ? "text-white font-bold"
-              : "text-white/60"
-              } trasition hover:text-white font-medium flex gap-2 items-center`}
-          >
+          <NavbarLink href="/consultoria-online">
             <ComputerDesktopIcon className="w-6 h-6 md:hidden" />
             Consultoria Online
-          </Link>
+          </NavbarLink>
         </li>
         <li
           className={`w-full md:hidden text-brandWhite ${navbarToggle ? "flex justify-center items-center" : "hidden"

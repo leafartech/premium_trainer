@@ -1,16 +1,16 @@
-import Box from "components/Box"
-import ButtonCTA from "components/ButtonCTA"
-import Card from "components/Card"
-import ComparisionBox from "components/ComparasionBox"
-import FAQ from "components/FAQ"
-import Footer from "components/Footer"
-import H2 from "components/H2"
-import Header from "components/Header"
-import MiniBox from "components/MiniBox"
-import Quote from "components/Quote"
-import SecondCard from "components/SecondCard"
-import Section from "components/Section"
-import ServicesBox from "components/ServicesBox"
+import Box from "@/components/Box"
+import ButtonCTA from "@/components/ButtonCTA"
+import Card from "@/components/Card"
+import ComparisionBox from "@/components/ComparasionBox"
+import FAQ from "@/components/FAQ"
+import Footer from "@/components/Footer"
+import H2 from "@/components/H2"
+import Header from "@/components/Header"
+import MiniBox from "@/components/MiniBox"
+import Quote from "@/components/Quote"
+import SecondCard from "@/components/SecondCard"
+import Section from "@/components/Section"
+import ServicesBox from "@/components/ServicesBox"
 import {
   AcademicCapIcon,
   ClipboardDocumentListIcon,
@@ -20,9 +20,9 @@ import {
   ArrowPathRoundedSquareIcon,
   MapIcon
 } from "@heroicons/react/24/outline"
-import MySwiper from "components/MySwiper"
+import MySwiper from "@/components/MySwiper"
 
-const Home = () => {
+export default function Page() {
   return (
     <div className="overflow-hidden">
       <Header
@@ -207,4 +207,3 @@ const Home = () => {
   )
 }
 
-export default Home
