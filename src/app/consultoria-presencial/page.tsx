@@ -101,6 +101,7 @@ const ConsultoriaPresencial = () => {
               'https://pay.kiwify.com.br/y5ozQMc',
               'https://pay.kiwify.com.br/0LA5Vou',
               'https://pay.kiwify.com.br/YFvUtNu',
+              'https://pay.kiwify.com.br/tvrivJV',
             ]}
           />
         </Section>

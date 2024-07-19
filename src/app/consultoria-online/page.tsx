@@ -101,6 +101,7 @@ const ConsultoriaOnline = () => {
               'https://pay.kiwify.com.br/OUMHcR7',
               'https://pay.kiwify.com.br/aODJ8MF',
               'https://pay.kiwify.com.br/aODJ8MF',
+              'https://pay.kiwify.com.br/us6Pf1J',
             ]}
           />
         </Section>

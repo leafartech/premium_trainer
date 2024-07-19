@@ -1,3 +1,4 @@
+import { StarIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
 interface PurchaseCardProps {
@@ -46,32 +47,47 @@ const PurchaseCard = ({
         {hrefList.length > 1 ? (
           <div className="grid grid-cols-2 gap-3">
             <a
+              target="_blank"
               href={`${hrefList[0]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
             >
               mensal
             </a>
             <a
+              target="_blank"
               href={`${hrefList[1]}`}
-              className="text-center rounded-md bg-brandRed-500 text-white font-semibold border border-brandRed-500 py-2 uppercase"
+              className="text-center rounded-md bg-brandRed-500 text-white font-semibold border border-brandRed-500 py-2 uppercase relative"
             >
+              <span className="absolute -top-2 -right-1 bg-brandWhite rounded-full w-5 h-5 flex justify-center items-center">
+                <StarIcon className="h-4 w-4 text-brandRed-500" />
+              </span>
               trimestral
             </a>
             <a
+              target="_blank"
               href={`${hrefList[2]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
             >
               semestral
             </a>
             <a
+              target="_blank"
               href={`${hrefList[3]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
             >
               anual
             </a>
+            <a
+              target="_blank"
+              href={`${hrefList[4]}`}
+              className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
+            >
+              Mensal Recorrente
+            </a>
           </div>
         ) : (
           <a
+            target="_blank"
             href={hrefList[0]}
             className="btn-shadow block bg-brandRed-500 w-full rounded-md text-center uppercase text-brandWhite py-3 font-bold"
           >
