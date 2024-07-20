@@ -234,7 +234,7 @@ export default function Page() {
           </div>
         </Section>
         <Section>
-          <h2 className="tracking-[12px] text-center text-2xl sm:text-4xl text-brandWhite">
+          <h2 className="tracking-[12px] text-center text-2xl sm:text-4xl text-brandWhite font-bold">
             FAQ
           </h2>
           <FAQ />
