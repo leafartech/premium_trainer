@@ -5,7 +5,7 @@ const ComparisionBox = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-8 md:flex-row relative">
       <div className="max-w-[482px] sm:h-[452px] flex flex-col bg-brandWhite rounded-md overflow-hidden">
-        <h3 className="w-full bg-red-600 p-3 text-xl text-brandWhite sm:h-[80px]">
+        <h3 className="w-full bg-brandRed-500 p-3 text-xl text-brandWhite sm:h-[80px]">
           <span className="font-bold">Quem não pode</span> se beneficiar com meu
           trabalho.
         </h3>

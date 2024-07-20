@@ -33,184 +33,20 @@ const Feedbacks = () => {
           },
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center justify-center w-full">
-            <Image
-              className="max-h-[400px] w-full max-w-[400px]"
-              src="/images/feedbacks/1.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/3.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/4.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/5.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/6.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/7.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/8.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/9.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/10.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/11.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/12.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/13.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/14.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/15.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/16.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="h-[450px] flex items-center">
-            <Image
-              className="max-h-[400px] w-full"
-              src="/images/feedbacks/17.png"
-              alt="Feedbacks"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </SwiperSlide>
+        {[...Array(16)].map((_, index) => (
+          <SwiperSlide key={index}>
+            <div className="h-[450px] flex items-center justify-center w-full">
+              <Image
+                className="max-h-[400px] w-full max-w-[400px]"
+                src={`/images/feedbacks/${index + 1}.png`}
+                alt="Feedbacks"
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   )
