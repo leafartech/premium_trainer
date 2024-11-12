@@ -1,6 +1,6 @@
 {
-  "name": "premium_trainer",
-  "private": true,
+  "name": "premium-trainer",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
