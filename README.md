@@ -16,13 +16,10 @@ To get started with Premium Trainer, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/leafartech/premium_trainer.git`
 2. Install the required dependencies: `npm install`
-3. Set up the database: `npm run setup-db`
-4. Start the application: `npm start`
 
 ## Usage
 
-Once the application is up and running, you can access it through your web browser. Simply navigate to `http://localhost:3000` and create an account to start using Premium Trainer.
-
+Once the application is up and running, you can access it through your web browser. Simply navigate to `http://localhost:3000` and using
 ## Contributing
 
 We welcome contributions from the community! If you have any ideas for new features or improvements, feel free to submit a pull request. Please make sure to follow our [contribution guidelines](CONTRIBUTING.md).

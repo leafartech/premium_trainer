@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
-import { FiClock } from 'react-icons/fi' // Se precisar de um ícone de relógio
+import { FiClock } from 'react-icons/fi'
 
 interface TimeLeft {
   days: number
@@ -11,7 +11,7 @@ interface TimeLeft {
   isBeforeEvent: boolean
 }
 
-export default function Countdown() {
+const Countdown = () => {
   const calculateTimeLeft = useCallback(() => {
     const eventStart = new Date('2024-11-14T18:00:00')
     const eventEnd = new Date('2024-11-17T23:59:59')
@@ -48,7 +48,7 @@ export default function Countdown() {
   if (!timeLeft) return null
 
   return (
-    <div className="w-full fixed bottom-4 z-50 p-4 bg-black text-white rounded-lg shadow-lg animate-pulse border-2 border-brandRed-500 sm:right-4 sm:w-96">
+    <div className="w-full fixed bottom-4 z-50 p-4 bg-black text-brandWhite rounded-lg shadow-lg animate-pulse border-2 border-brandRed-500 sm:right-4 sm:w-96">
       <div className="flex items-center justify-center">
         <FiClock className="mr-2 text-brandRed-500 text-xl" />
         {timeLeft.isBeforeEvent ? (
@@ -82,11 +82,12 @@ export default function Countdown() {
       </div>
 
       <p className="mt-4 text-sm text-center">
-        Aproveite 15% de desconto na consultoria online!
+        Aproveite 15% de desconto nos planos trimestrais, semestrais e anuais da
+        consultoria online!
       </p>
       {!timeLeft.isBeforeEvent && (
         <button
-          className="btn-shadow w-full mt-2 p-2 bg-brandRed-500 text-white font-bold rounded transition-all duration-300"
+          className="btn-shadow w-full mt-2 p-2 bg-brandRed-500 text-brandWhite font-bold rounded transition-all duration-300"
           disabled={timeLeft.isBeforeEvent}
           type="button"
         >
@@ -96,3 +97,5 @@ export default function Countdown() {
     </div>
   )
 }
+
+export default Countdown

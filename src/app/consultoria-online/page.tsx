@@ -75,7 +75,7 @@ const ConsultoriaOnline = () => {
             </H2>
             <div className="mt-4">
               {secondCardDataTitles.map((title, index) => (
-                <SecondCard key={index} title={title} />
+                <SecondCard key={`${title}}-${index + 1}}`} title={title} />
               ))}
             </div>
           </div>
@@ -89,7 +89,6 @@ const ConsultoriaOnline = () => {
             />
           </div>
         </Section>
-        <span id="produto"></span>
         <Section>
           <PurchaseCard
             titleCard="Consultoria Online"
