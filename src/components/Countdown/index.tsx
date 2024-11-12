@@ -48,7 +48,7 @@ const Countdown = () => {
   if (!timeLeft) return null
 
   return (
-    <div className="w-full fixed bottom-4 z-50 p-4 bg-black text-brandWhite rounded-lg shadow-lg animate-pulse border-2 border-brandRed-500 sm:right-4 sm:w-96">
+    <div className="w-full fixed bottom-4 z-50 p-4 bg-brandBlack text-brandWhite rounded-lg shadow-lg animate-pulse border-2 border-brandRed-500 sm:right-4 sm:w-96">
       <div className="flex items-center justify-center">
         <FiClock className="mr-2 text-brandRed-500 text-xl" />
         {timeLeft.isBeforeEvent ? (
