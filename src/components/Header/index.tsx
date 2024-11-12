@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 interface HeaderProps {
   topTitle: string
@@ -53,7 +53,7 @@ const Header = ({
         <h3 className="p-1 text-center uppercase tracking-[6px] text-xs text-brandWhite">
           {topTitle}
         </h3>
-        <div className="w-3/4 line-gradient h-[1px]"></div>
+        <div className="w-3/4 line-gradient h-[1px]" />
         <h1 className="uppercase text-brandWhite text-4xl md:text-5xl tracking-wider font-semibold mt-2">
           João Navarro
         </h1>

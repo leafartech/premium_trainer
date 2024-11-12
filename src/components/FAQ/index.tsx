@@ -10,7 +10,7 @@ const FAQ = () => {
   return (
     <Accordion type="multiple" className="w-full sm:w-[1000px]">
       {QUESTS.map((quest, index) => (
-        <AccordionItem key={index} value={`${index}`}>
+        <AccordionItem key={`${quest}`} value={`${index}`}>
           <AccordionTrigger>{quest.question}</AccordionTrigger>
           <AccordionContent>{quest.answer}</AccordionContent>
         </AccordionItem>

@@ -100,7 +100,7 @@ export default function Page() {
             </div>
           </div>
         </Section>
-        <div className="hidden md:block line-gradient h-1"></div>
+        <div className="hidden md:block line-gradient h-1" />
         <Section>
           <div className="w-full md:hidden">
             <Image
@@ -215,21 +215,11 @@ export default function Page() {
               Conheça <span className="text-brandRed-500">meus serviços</span>
             </H2>
           </div>
-          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-12 justify-center items-center mt-5">
-            <ServicesBox
-              href="/consultoria-presencial"
-              product="Consultoria Presencial"
-              bottomSentence="Sua melhor forma"
-            />
+          <div className="flex flex-col gap-12 justify-center items-center mt-5">
             <ServicesBox
               href="/consultoria-online"
               product="Consultoria Online"
               bottomSentence="MUDE, TREINE, SUPERE"
-            />
-            <ServicesBox
-              href="/avaliacao-fisica"
-              product="Avalição Física"
-              bottomSentence="MOLDANDO SEU FÍSICO"
             />
           </div>
         </Section>

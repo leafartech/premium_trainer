@@ -1,10 +1,5 @@
 const QUESTS = [
   {
-    question: 'Onde fica a clínica que você atende?',
-    answer:
-      'Em Ilhéus/Ba Endereço rua nossa senhora aparecida, n° 581. É uma galeria de salas comerciais do outro lado da rua do cemitério do Nelson Costa um pouco mais para frente. Quando chegar na galeria, você deverá subir as escadas que se encontram logo à esquerda. A sala da clínica fica ao final do corredor, à esquerda, após subir as escadas!',
-  },
-  {
     question: 'O que é um treino individualizado?',
     answer:
       'É um treino voltado às suas necessidades/especificidades físicas, biológicas e anatômicas do seu corpo, onde é feita uma análise minuciosa para te ajudarmos na busca do seu objetivo.',

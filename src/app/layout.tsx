@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Countdown from '@/components/Countdown'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,8 @@ export default function Layout({ children }: LayoutProps) {
       <body
         className={`min-h-screen ${inter.className} antialiased bg-brandBlack`}
       >
+        <Countdown />
+
         {children}
       </body>
     </html>
