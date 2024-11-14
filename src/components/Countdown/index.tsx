@@ -94,7 +94,7 @@ const Countdown = () => {
         consultoria online!
       </p>
 
-      {timeLeft.isBeforeEvent &&
+      {!timeLeft.isBeforeEvent &&
         (pathname === '/consultoria-online' ? (
           <a
             href="#cta"
