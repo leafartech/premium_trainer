@@ -1,5 +1,6 @@
 'use client'
 
+import { usePathname, useRouter } from 'next/navigation'
 import { useCallback, useEffect, useState } from 'react'
 import { FiClock } from 'react-icons/fi'
 
@@ -12,6 +13,9 @@ interface TimeLeft {
 }
 
 const Countdown = () => {
+  const pathname = usePathname()
+  const router = useRouter()
+
   const calculateTimeLeft = useCallback(() => {
     const eventStart = new Date('2024-11-14T18:00:00')
     const eventEnd = new Date('2024-11-17T23:59:59')
@@ -46,6 +50,10 @@ const Countdown = () => {
   }, [calculateTimeLeft])
 
   if (!timeLeft) return null
+
+  const push = () => {
+    router.push('/consultoria-online')
+  }
 
   return (
     <div className="w-full fixed bottom-4 z-50 p-4 bg-brandBlack text-brandWhite rounded-lg shadow-lg animate-pulse border-2 border-brandRed-500 sm:right-4 sm:w-96">
@@ -85,15 +93,24 @@ const Countdown = () => {
         Aproveite 15% de desconto nos planos trimestrais, semestrais e anuais da
         consultoria online!
       </p>
-      {!timeLeft.isBeforeEvent && (
-        <button
-          className="btn-shadow w-full mt-2 p-2 bg-brandRed-500 text-brandWhite font-bold rounded transition-all duration-300"
-          disabled={timeLeft.isBeforeEvent}
-          type="button"
-        >
-          Garanta Agora
-        </button>
-      )}
+
+      {timeLeft.isBeforeEvent &&
+        (pathname === '/consultoria-online' ? (
+          <a
+            href="#cta"
+            className="block btn-shadow w-full mt-2 p-2 bg-brandRed-500 text-brandWhite font-bold rounded transition-all duration-30 text-center"
+          >
+            Garanta Agora
+          </a>
+        ) : (
+          <button
+            className="btn-shadow w-full mt-2 p-2 bg-brandRed-500 text-brandWhite font-bold rounded transition-all duration-300"
+            type="button"
+            onClick={push}
+          >
+            Garanta Agora
+          </button>
+        ))}
     </div>
   )
 }

@@ -24,7 +24,7 @@ const ConsultoriaOnline = () => {
       <Header
         topTitle="Consultoria Online"
         ctaText="Quero comprar agora"
-        ctaHref="#produto"
+        ctaHref="#cta"
         description="Receba orientação especializada onde quer que esteja. Nosso plano individualizado se adapta a sua rotina, garantindo que você alcance seus objetivos de forma eficiente!"
         imageHeaderPath="consultoria-online"
       >
@@ -89,7 +89,7 @@ const ConsultoriaOnline = () => {
             />
           </div>
         </Section>
-        <Section>
+        <Section id="cta">
           <PurchaseCard
             titleCard="Consultoria Online"
             descriptionCard="Ideal para você que busca uma estratégia individualizada e específica para os seus objetivos"
