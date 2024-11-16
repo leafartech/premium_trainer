@@ -99,7 +99,7 @@ const ConsultoriaOnline = () => {
               'https://pay.kiwify.com.br/kE3qpTT',
               'https://pay.kiwify.com.br/OUMHcR7',
               'https://pay.kiwify.com.br/aODJ8MF',
-              'https://pay.kiwify.com.br/aODJ8MF',
+              'https://pay.kiwify.com.br/s1ukJ7J',
               'https://pay.kiwify.com.br/us6Pf1J',
             ]}
           />
