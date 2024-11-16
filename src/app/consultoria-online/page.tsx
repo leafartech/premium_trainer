@@ -27,6 +27,7 @@ const ConsultoriaOnline = () => {
         ctaHref="#cta"
         description="Receba orientação especializada onde quer que esteja. Nosso plano individualizado se adapta a sua rotina, garantindo que você alcance seus objetivos de forma eficiente!"
         imageHeaderPath="consultoria-online"
+        background="inicio-pc-consultoria-online"
       >
         <H2 header={true}>
           <span className="text-brandRed-500">Alcance</span> o seu potencial

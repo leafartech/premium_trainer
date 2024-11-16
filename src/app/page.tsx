@@ -38,7 +38,7 @@ export default function Page() {
           <span className="text-brandRed-500"> shape dos seus sonhos</span>
         </H2>
       </Header>
-      <main className="sm:-mt-16">
+      <main className="sm:-mt-4">
         <Section>
           <div className="flex flex-col w-full">
             <div className="w-full flex justify-center md:hidden">
