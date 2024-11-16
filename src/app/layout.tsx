@@ -17,6 +17,18 @@ export const metadata: Metadata = {
     'personal trainer',
     'João Navarro',
   ],
+  authors: [
+    {
+      name: 'Arthur Gustavo Souza Silva Nascimento',
+      url: 'https://github.com/Kibryant',
+    },
+    {
+      name: 'Rafael Borges Bezerra',
+      url: 'https://github.com/leafartech',
+    },
+  ],
+  category: 'Health',
+  robots: 'index, follow',
 }
 
 interface LayoutProps {

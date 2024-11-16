@@ -142,13 +142,13 @@ export default function Page() {
                 <ButtonCTA href="#produtos">Quero saber mais!</ButtonCTA>
               </div>
             </div>
-            <div className="w-full sm:max-w-[540px]">
+            <div className="w-full sm:max-w-[540px] justify-center items-center mt-4">
               <Image
-                className="w-myLg md:w-myXl mt-4"
-                src="/images/inicio3.png"
+                className="w-myLg md:w-myXl"
+                src="/images/mude-sua-vida.png"
                 alt="Foto do João Navarro"
                 width={450}
-                height={450}
+                height={320}
               />
             </div>
           </div>
