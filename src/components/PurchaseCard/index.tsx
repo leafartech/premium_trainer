@@ -1,5 +1,6 @@
 import { StarIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import { Kiwify } from '../Icons/Kiwify'
 
 interface PurchaseCardProps {
   titleCard: string
@@ -18,6 +19,16 @@ const PurchaseCard = ({
 }: PurchaseCardProps) => {
   return (
     <div className="w-full lg:w-[540px] xl:w-[640px] purchase-card flex flex-col gap-3 justify-center px-4 py-8">
+      <div className="flex justify-center mt-3 gap-1">
+        <Image
+          src="/images/logo01.png"
+          alt="Imagem do João Navarro"
+          quality={100}
+          width={80}
+          height={80}
+          className="hidden sm:block"
+        />
+      </div>
       <div className="md:grid md:grid-cols-3">
         <div className="flex flex-col md:col-span-2 w-full gap-1 mb-3">
           <h3 className="text-2xl md:text-3xl text-brandWhite font-semibold">
@@ -37,7 +48,7 @@ const PurchaseCard = ({
           </span>
           <div className="flex flex-col">
             <span className="text-5xl md:text-5xl text-brandWhite font-extrabold">
-              R${(parseInt(valueOn) / 30).toFixed(0)}
+              R${(Number.parseInt(valueOn) / 30).toFixed(0)}
               <span className="text-zinc-300 text-lg"> / dia</span>
             </span>
           </div>
@@ -50,13 +61,15 @@ const PurchaseCard = ({
               target="_blank"
               href={`${hrefList[0]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
+              rel="noreferrer"
             >
               mensal
             </a>
             <a
               target="_blank"
               href={`${hrefList[1]}`}
-              className="text-center rounded-md bg-brandRed-500 text-white font-semibold border border-brandRed-500 py-2 uppercase relative"
+              className="btn-shadow text-center rounded-md bg-brandRed-500 text-white font-semibold border border-brandRed-500 py-2 uppercase relative"
+              rel="noreferrer"
             >
               <span className="absolute -top-2 -right-1 bg-brandWhite rounded-full w-5 h-5 flex justify-center items-center">
                 <StarIcon className="h-4 w-4 text-brandRed-500" />
@@ -67,6 +80,7 @@ const PurchaseCard = ({
               target="_blank"
               href={`${hrefList[2]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
+              rel="noreferrer"
             >
               semestral
             </a>
@@ -74,6 +88,7 @@ const PurchaseCard = ({
               target="_blank"
               href={`${hrefList[3]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
+              rel="noreferrer"
             >
               anual
             </a>
@@ -81,6 +96,7 @@ const PurchaseCard = ({
               target="_blank"
               href={`${hrefList[4]}`}
               className="text-center rounded-md hover:bg-brandRed-500 hover:text-white hover:font-semibold border border-brandRed-500 py-2 text-brandRed-500 font-medium uppercase"
+              rel="noreferrer"
             >
               Mensal Recorrente
             </a>
@@ -90,6 +106,7 @@ const PurchaseCard = ({
             target="_blank"
             href={hrefList[0]}
             className="btn-shadow block bg-brandRed-500 w-full rounded-md text-center uppercase text-brandWhite py-3 font-bold"
+            rel="noreferrer"
           >
             Quero agendar um horário
           </a>
@@ -186,6 +203,21 @@ const PurchaseCard = ({
             Liberdade para tirar dúvidas.
           </p>
         </div>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/images/checkIcon3.png"
+            alt="Ícone de check"
+            className="h-5 w-5 md:h-6 md:w-6"
+            width={20}
+            height={20}
+            quality={100}
+          />
+          <p className="text-brandWhite md:text-lg">7 dias de garantia.</p>
+        </div>
+      </div>
+      <div className="flex justify-center mt-3 gap-1">
+        <Kiwify />
+        <div className="text-white text-xs font-semibold">| Compra segura</div>
       </div>
     </div>
   )
