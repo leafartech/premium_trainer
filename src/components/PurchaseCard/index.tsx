@@ -19,7 +19,7 @@ const PurchaseCard = ({
 }: PurchaseCardProps) => {
   return (
     <div className="w-full lg:w-[540px] xl:w-[640px] purchase-card flex flex-col gap-3 justify-center px-4 py-8">
-      <div className="flex justify-center mt-3 gap-1">
+      <div className="hidden sm:flex sm:justify-center sm:mt-3 sm:gap-1">
         <Image
           src="/images/logo01.png"
           alt="Imagem do João Navarro"
